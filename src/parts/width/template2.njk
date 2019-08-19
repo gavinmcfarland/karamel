@@ -1,0 +1,12 @@
+{% for rule, modifer, decls in rules %}
+ {% if default %}
+	.w {
+{% else %}
+	.w-{{modifier}} {
+{% endif %}
+	{% for decl, value in decls %}
+		{{decl}}
+	{% endfor %}
+	}
+{% endfor %}
+
