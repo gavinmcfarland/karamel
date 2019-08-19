@@ -2,9 +2,14 @@ export default ['template', 'max-width', theme => {
 
 	return `\
 	{% for rule in rules -%}
-	.{{ rule.name | kebabcase }} {
-		{% if rule.default %}
-		{% endif %}
+	{% if rule.name === 'default' %}
+	.color {
+	{% else %}
+	.color-{{rule.modifier}} {
+	{% endif %}
+		{%- for decl in this %}
+		{{decl.name | kebabcase}}: {{decl.value | join(' ')}};
+		{%- endfor %}
 	}
 	{% endfor %}`
 }]
