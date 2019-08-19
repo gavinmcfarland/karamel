@@ -1,0 +1,42 @@
+{
+	"name": "karamel",
+	"version": "1.0.0-alpha.1",
+	"description": "A CSS framework",
+	"main": "src/index.js",
+	"scripts": {
+		"build": "babel src -d dist --copy-files && node dist/index.js",
+		"test": "jest --verbose"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/limitlessloop/karamel.git"
+	},
+	"keywords": [
+		"css"
+	],
+	"author": "Gavin McFarland",
+	"bugs": {
+		"url": "https://github.com/limitlessloop/karamel/issues"
+	},
+	"homepage": "https://github.com/limitlessloop/karamel#readme",
+	"dependencies": {
+		"@babel/cli": "^7.5.5",
+		"@babel/core": "^7.5.5",
+		"@babel/plugin-proposal-class-properties": "^7.5.5",
+		"@babel/preset-env": "^7.5.5",
+		"babel-plugin-add-module-exports": "^1.0.2",
+		"babel-plugin-rewire": "^1.2.0",
+		"jest": "^24.9.0",
+		"prettier": "^1.18.2"
+	},
+	"jest": {
+		"testEnvironment": "node",
+		"roots": [
+			"src",
+			"__tests__"
+		]
+	},
+	"devDependencies": {
+		"mole": "git+https://github.com/limitlessloop/mole.git"
+	}
+}

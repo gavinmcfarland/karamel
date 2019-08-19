@@ -1,3 +1,3 @@
-# Repo Template
+# Karamel
 
-This is a template which stores certain files used in most repos created for my projects.
+A work in progress CSS framework
