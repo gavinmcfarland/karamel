@@ -99,7 +99,9 @@
 			}
 		},
 		width: {
-			abbr: 'w'
+			content: {},
+			flex: {},
+			viewport: {},
 		}
 	}
 }

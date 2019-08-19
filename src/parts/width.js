@@ -1,7 +1,12 @@
-export default ['template', 'width', theme => {
+export default ['template', 'width', ({ theme }) => {
+	let name = 'width'
+	let abbr = 'w'
 
 	return `\
-	.w-test {
-		width: var(--width)
+	.${abbr} {
+		${name}: var(--${name});
+	}
+	.${abbr} > * {
+		--${name}: unset;
 	}`
 }]

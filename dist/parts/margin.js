@@ -5,7 +5,9 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports["default"] = void 0;
 var _default = ['template', 'margin', function (theme) {
-  return "\tm-".concat(modifier, " {\n\t\tmargin: ''\n\t}");
+  var name = 'max-width';
+  var abbr = 'max-w';
+  return "\t.".concat(abbr, "-").concat(modifier, " {\n\t\tmargin: ''\n\t}");
 }];
 exports["default"] = _default;
 module.exports = exports.default;

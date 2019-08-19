@@ -1,8 +1,10 @@
-export default ['template', 'max-width', theme => {
+export default ['template', 'max-width', ({ theme }) => {
+	let name = 'max-width'
+	let abbr = 'max-w'
 
 	return `\
-	max-w-${modifier} {
-		--max-width: ${value};
-		max-width: 'var(--max-width)';
+	.${abbr}-${modifier} {
+		--${name}: ${value};
+		${name}: var(--${name});
 	}`
 }]

@@ -1,6 +1,6 @@
 module.exports = {
 	theme: 'theme.jsonnet',
-	template: ['width'],
+	template: ['width', 'padding', 'font-style'],
 	dir: 'build/',
 	output: { file: 'styles.css' }
 }
