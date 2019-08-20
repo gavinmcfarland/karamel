@@ -18,8 +18,9 @@ function _iterableToArray(iter) { if (Symbol.iterator in Object(iter) || Object.
 
 function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } }
 
-_mole["default"].add.apply(_mole["default"], _toConsumableArray(_width["default"]));
-
+// import parts from './models/parts';
+// mole.add(...width)
+// mole.add(...parts)
 _mole["default"].add.apply(_mole["default"], _toConsumableArray(_padding["default"]));
 
 _mole["default"].add.apply(_mole["default"], _toConsumableArray(_fontStyle["default"]));

@@ -1,0 +1,11 @@
+{% for rule, modifier, props in rules %}
+{% if modifier == 'default' %}
+.f {
+{% else %}
+.f-{{modifier}} {
+{% endif %}
+	{% for prop, value in props%}
+	{{prop}}: {{value}};
+	{% endfor %}
+}
+{% endfor %}
