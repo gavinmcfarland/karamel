@@ -8,10 +8,12 @@ export default ['template', 'font-style', ({ theme }) => {
 	let data = {
 		rules: [{
 			name: 'font-style',
-			abbr: 'f',
+			abbr: 'font',
 			...structure(theme.font.style, ['modifiers', 'props', 'value'])
 		}]
 	}
+
+	console.log(data.rules[0])
 
 	let template = fs.readFileSync(__dirname + '/template.njk', 'utf8')
 

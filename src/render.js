@@ -15,5 +15,4 @@ nunjucks.addFilter('kebabcase', function(str) {
 
 export default function render(string, data) {
 	return nunjucks.renderString(string, data);
-
 }

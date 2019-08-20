@@ -26,9 +26,10 @@ var _default = ['template', 'font-style', function (_ref) {
   var data = {
     rules: [_objectSpread({
       name: 'font-style',
-      abbr: 'f'
+      abbr: 'font'
     }, (0, _structure["default"])(theme.font.style, ['modifiers', 'props', 'value']))]
   };
+  console.log(data.rules[0]);
 
   var template = _fs["default"].readFileSync(__dirname + '/template.njk', 'utf8');
 

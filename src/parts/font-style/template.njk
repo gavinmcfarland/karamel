@@ -7,7 +7,11 @@
 }
 {%- endif -%}
 {% for modifier in rule.modifiers %}
+{% if modifier.name === 'default' %}
+.{{rule.abbr}} {
+{%- else -%}
 .{{rule.abbr}}-{{modifier.name}} {
+{%- endif -%}
 	{%- for prop in modifier.props %}
 	{{prop.name | kebabcase}}: {{prop.value}};
 	{%- endfor %}
