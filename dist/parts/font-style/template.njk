@@ -1,20 +1,13 @@
-{% for rule in rules -%}
-{%- if rule.props -%}
+{%- for rule in rules -%}
+{%- for modifier in rule.modifiers -%}
+{%- if modifier.name === 'default' %}
 .{{rule.abbr}} {
-	{%- for prop in rule.props %}
-	{{prop.name | kebabcase}}: {{prop.value}};
-	{%- endfor %}
-}
-{%- endif -%}
-{% for modifier in rule.modifiers %}
-{% if modifier.name === 'default' %}
-.{{rule.abbr}} {
-{%- else -%}
+	{%- else -%}
 .{{rule.abbr}}-{{modifier.name}} {
 {%- endif -%}
-	{%- for prop in modifier.props %}
+{% for prop in modifier.props %}
 	{{prop.name | kebabcase}}: {{prop.value}};
-	{%- endfor %}
+{%- endfor %}
 }
-{%- endfor -%}
+{% endfor -%}
 {%- endfor -%}

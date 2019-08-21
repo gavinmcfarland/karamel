@@ -4,10 +4,9 @@ import v from 'voca'
 const nunjucks = new njk.Environment()
 // const nunjucks = njk.configure()
 
-// nunjucks.addGlobal('this', function() {
-// 	console.log(this)
-// 	return this.getVariables()
-// }())
+nunjucks.addGlobal('this', function() {
+	return this.getVariables()
+})
 
 nunjucks.addFilter('kebabcase', function(str) {
 	return v.kebabCase(str);
