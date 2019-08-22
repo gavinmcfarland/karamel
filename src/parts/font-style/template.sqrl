@@ -1,0 +1,13 @@
+{{each(options.rules)}}
+{{each(@this.modifiers)}}
+{{if(@this.name === 'default')}}
+.{{@../this.abbr}} {
+	{{# else }}
+.{{@../this.abbr}}-{{@this.name}} {
+{{/if}}
+{{each(@this.props)}}
+	{{@this.name | kebabcase}}: {{@this.value}};
+{{/each}}
+}
+{{ /each }}
+{{ /each }}
