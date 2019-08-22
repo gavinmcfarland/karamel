@@ -1,6 +1,10 @@
---iterate(rules)-- 									--if(@this.name === 'default')--
-.{{@../this.abbr}} {								--# else--
-.{{@../this.abbr}}-{{@this.name}} {					--/if-- --@down()--
-	{{@this.name | kebabcase}}: {{@this.value}}; 	--@up()--
+--iterate(rules) rule--
+	--if(@this.name === 'default') @down() modifier--
+.{{@rule:abbr}} {
+	--# else--
+.{{@rule:abbr}}-{{@modifier:name}} {
+	--/if @down() prop--
+	{{@prop:name | kebabcase}}: {{@prop:value}};
+	--@up()--
 }
 --/iterate--

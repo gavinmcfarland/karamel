@@ -9,177 +9,60 @@ var _lodash = _interopRequireDefault(require("lodash"));
 
 var _fs = _interopRequireDefault(require("fs"));
 
+var _voca = _interopRequireDefault(require("voca"));
+
 var _render = _interopRequireDefault(require("../../render"));
 
 var _structure = _interopRequireDefault(require("../../structure"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest(); }
 
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(source, true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(source).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance"); }
 
-function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+function _iterableToArrayLimit(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
 
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 var template = _fs["default"].readFileSync(__dirname + '/template.sqrl', 'utf8');
 
-function getAdjValues(thing, depth) {
-  function iterValue(thing, depth) {
-    var i = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : -1;
-    i++; // Array.isArray(thing) ? console.log('array ->', thing) : console.log('not ->', thing)
-    // Array.isArray(thing) ? thing : [thing]
-    // console.log(thing)
-    // let newThing = {}
-    // if (Array.isArray(thing)) {
-    // 	if (thing.length === 1) {
-    // 		// console.log(thing)
-    // 		newThing = thing[0]
-    // 		thing = newThing
-    // 		// console.log(newThing)
-    // 	}
-    // }
-    // console.log(thing)
-
-    var targetDepth = depth - 1;
-
-    _lodash["default"].each(thing, function (value, property) {
-      var newThing = {};
-
-      if (Array.isArray(value)) {
-        if (value.length === 1) {
-          // console.log(thing)
-          newThing = value[0];
-          value = newThing; // console.log(newThing)
-        }
-      }
-
-      if (i === 0 && targetDepth === -1) {
-        arr.push(_defineProperty({}, property, value));
-      }
-
-      if (i === targetDepth) {
-        console.log(i);
-        arr.push(value); // if (i < 1) {
-        // 	arr.push({
-        // 		[property]: value
-        // 	})
-        // } else {
-        // 	arr.push(value)
-        // }
-      }
-
-      if (_typeof(value) === 'object') {
-        return iterValue(value, depth, i);
-      }
-    });
-  }
-
-  var arr = [];
-  iterValue(thing, depth);
-  console.log(arr);
-  return arr;
-} // function getAdjValues(obj, depth) {
-// 	function iterObj(obj, depth, i = -1) {
-// 		i++
-// 		_.each(obj, function(value, property) {
-// 			while (i < depth) {
-// 				if (typeof obj[property] === 'object') {
-// 					return iterObj(obj[property], depth, i)
-// 				} else {
-// 					arr.push({
-// 						[property]: value
-// 					})
-// 					return
-// 				}
-// 			}
-// 			if (i === depth) {
-// 				arr.push({
-// 					[property]: value
-// 				})
-// 			}
-// 			return obj
-// 		})
-// 		// console.log(arr)
-// 		if (i === depth) {
-// 			return arr
-// 		}
-// 	}
-// 	let arr = []
-// 	iterObj(obj, depth)
-// 	console.log(arr)
-// 	return arr
-// }
-
-
-var data = {
-  rules: [{
-    name: 'font-style',
-    abbr: 'font',
-    modifiers: [{
-      name: 'caps',
-      props: '[Array]'
-    }, {
-      name: 'heading',
-      props: '[Array]'
-    }, {
-      name: 'link',
-      props: '[Array]'
-    }, {
-      name: 'text',
-      props: '[Array]'
-    }]
-  }]
-};
-console.log('first--------------------');
-getAdjValues(data, 0);
-console.log('--------------------');
-getAdjValues(data, 1);
-console.log('--------------------');
-getAdjValues(data, 2);
-console.log('--------------------');
-getAdjValues(data, 3);
-console.log('--------------------');
-getAdjValues(data, 4);
-var data2 = {
-  rules: {
-    name: 'font-style',
-    abbr: 'font',
-    modifiers: [{
-      name: 'caps',
-      props: '[Array]'
-    }, {
-      name: 'heading',
-      props: '[Array]'
-    }, {
-      name: 'link',
-      props: '[Array]'
-    }, {
-      name: 'text',
-      props: '[Array]'
-    }]
-  }
-};
-console.log('second--------------------');
-getAdjValues(data2, 0);
-console.log('--------------------');
-getAdjValues(data2, 1);
-console.log('--------------------');
-getAdjValues(data2, 2);
-console.log('--------------------');
-getAdjValues(data2, 3);
-console.log('--------------------');
-getAdjValues(data2, 4);
 var _default = ['template', 'font-style', function (_ref) {
   var theme = _ref.theme;
-  var data = {
-    rules: [_objectSpread({
-      name: 'font-style',
-      abbr: 'font'
-    }, (0, _structure["default"])(theme.font.style, ['modifiers', 'props', 'value']))]
-  };
-  return (0, _render["default"])(template, data);
+  // let data = {
+  // 	rules: [{
+  // 		name: 'font-style',
+  // 		abbr: 'font',
+  // 		...structure(theme.font.style, ['modifiers', 'props', 'value'])
+  // 	}]
+  // }
+  var o = theme.font.style;
+  var string = '';
+
+  for (var modifier in o) {
+    string += ".font-".concat(modifier, " {\n");
+
+    for (var _i = 0, _Object$entries = Object.entries(o[modifier]); _i < _Object$entries.length; _i++) {
+      var _Object$entries$_i = _slicedToArray(_Object$entries[_i], 2),
+          prop = _Object$entries$_i[0],
+          value = _Object$entries$_i[1];
+
+      string += "\t".concat(_voca["default"].kebabCase(prop), ": ").concat(value, ";\n");
+    }
+
+    string += "}\n";
+  }
+
+  console.log(string); // ;
+  // .reduce(function(acc, current, index, arr) {
+  // 	console.log(acc)
+  // 	console.log(current)
+  // 	console.log(index)
+  // 	console.log(arr)
+  // 	return acc;
+  // })
+
+  return string;
 }];
 exports["default"] = _default;
 module.exports = exports.default;
