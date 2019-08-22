@@ -1,7 +1,7 @@
 --iterate(rules) rule--
 	--if(@this.name === 'default') @down() modifier--
 .{{@rule:abbr}} {
-	--# else--
+		--# else--
 .{{@rule:abbr}}-{{@modifier:name}} {
 	--/if @down() prop--
 	{{@prop:name | kebabcase}}: {{@prop:value}};
