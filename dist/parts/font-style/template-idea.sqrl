@@ -1,6 +1,0 @@
---iterate(rules)-- 									--if(@this.name === 'default')--
-.{{@../this.abbr}} {								--# else--
-.{{@../this.abbr}}-{{@this.name}} {					--/if-- --@down()--
-	{{@this.name | kebabcase}}: {{@this.value}}; 	--@up()--
-}
---/iterate--

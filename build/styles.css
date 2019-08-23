@@ -1,15 +1,32 @@
-	.p {
-		padding-top: var(--pt, unset);
-		padding-right: var(--pr, unset);
-		padding-bottom: var(--pb, unset);
-		padding-left: var(--pl, unset);
-	}
-	.p > * {
-		--pt: unset;
-		--pr: unset;
-		--pb: unset;
-		--pl: unset;
-	}
+.w {
+	width: var(--width);
+}
+.w > * {
+	--width: unset;
+}
+.m {
+	margin: var(--margin, unset);
+}
+.m > * {
+	--margin: unset;
+}
+.max-w {
+	--max-width: value;
+	max-width: var(--max-width);
+}
+	
+.p {
+	padding-top: var(--pt, unset);
+	padding-right: var(--pr, unset);
+	padding-bottom: var(--pb, unset);
+	padding-left: var(--pl, unset);
+}
+.p > * {
+	--pt: unset;
+	--pr: unset;
+	--pb: unset;
+	--pl: unset;
+}
 .font-caps {
 	font-family: arial;
 	font-weight: 500;

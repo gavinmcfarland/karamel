@@ -4,6 +4,12 @@ var _mole = _interopRequireDefault(require("mole"));
 
 var _width = _interopRequireDefault(require("./parts/width"));
 
+var _maxWidth = _interopRequireDefault(require("./parts/max-width"));
+
+var _margin = _interopRequireDefault(require("./parts/margin"));
+
+var _colorScheme = _interopRequireDefault(require("./parts/color-scheme"));
+
 var _padding = _interopRequireDefault(require("./parts/padding"));
 
 var _fontStyle = _interopRequireDefault(require("./parts/font-style"));
@@ -21,7 +27,15 @@ function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
 // import parts from './models/parts';
 // mole.add(...width)
 // mole.add(...parts)
+_mole["default"].add.apply(_mole["default"], _toConsumableArray(_margin["default"]));
+
 _mole["default"].add.apply(_mole["default"], _toConsumableArray(_padding["default"]));
+
+_mole["default"].add.apply(_mole["default"], _toConsumableArray(_width["default"]));
+
+_mole["default"].add.apply(_mole["default"], _toConsumableArray(_maxWidth["default"]));
+
+_mole["default"].add.apply(_mole["default"], _toConsumableArray(_colorScheme["default"]));
 
 _mole["default"].add.apply(_mole["default"], _toConsumableArray(_fontStyle["default"]));
 

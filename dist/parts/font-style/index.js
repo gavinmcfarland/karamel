@@ -25,17 +25,9 @@ function _iterableToArrayLimit(arr, i) { var _arr = []; var _n = true; var _d = 
 
 function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
-var template = _fs["default"].readFileSync(__dirname + '/template.sqrl', 'utf8');
-
+// let template = fs.readFileSync(__dirname + '/template.sqrl', 'utf8')
 var _default = ['template', 'font-style', function (_ref) {
   var theme = _ref.theme;
-  // let data = {
-  // 	rules: [{
-  // 		name: 'font-style',
-  // 		abbr: 'font',
-  // 		...structure(theme.font.style, ['modifiers', 'props', 'value'])
-  // 	}]
-  // }
   var o = theme.font.style;
   var string = '';
 
@@ -52,15 +44,6 @@ var _default = ['template', 'font-style', function (_ref) {
 
     string += "}\n";
   }
-
-  console.log(string); // ;
-  // .reduce(function(acc, current, index, arr) {
-  // 	console.log(acc)
-  // 	console.log(current)
-  // 	console.log(index)
-  // 	console.log(arr)
-  // 	return acc;
-  // })
 
   return string;
 }];

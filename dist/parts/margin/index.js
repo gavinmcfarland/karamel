@@ -5,9 +5,9 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports["default"] = void 0;
 var _default = ['template', 'margin', function (theme) {
-  var name = 'max-width';
-  var abbr = 'max-w';
-  return "\t.".concat(abbr, "-").concat(modifier, " {\n\t\tmargin: ''\n\t}");
+  var name = 'margin';
+  var abbr = 'm';
+  return ".".concat(abbr, " {\n\t").concat(name, ": var(--").concat(name, ", unset);\n}\n.").concat(abbr, " > * {\n\t--").concat(name, ": unset;\n}");
 }];
 exports["default"] = _default;
 module.exports = exports.default;

@@ -26,6 +26,7 @@
 		"@babel/preset-env": "^7.5.5",
 		"babel-plugin-add-module-exports": "^1.0.2",
 		"babel-plugin-rewire": "^1.2.0",
+		"common-tags": "^1.8.0",
 		"jest": "^24.9.0",
 		"lodash": "^4.17.15",
 		"nunjucks": "^3.2.0",
