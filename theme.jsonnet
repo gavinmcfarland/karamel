@@ -63,10 +63,30 @@
 				abbr: 'c'
 			}
 		},
+		fontSize: {
+			abbr: 'f'
+		},
+		fontStyle: {
+			abbr: 'font'
+		},
 		width: {
 			content: {},
 			flex: {},
 			viewport: {},
-		}
+			abbr: 'c'
+		},
+		maxWidth: {
+			abbr: 'max-w'
+		},
+		padding: {
+			abbr: 'p'
+		},
+		margin: {
+			abbr: 'm'
+		},
+		border: {
+			abbr: 'b'
+		},
+
 	}
 }

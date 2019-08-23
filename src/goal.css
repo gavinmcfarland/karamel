@@ -1,17 +1,38 @@
 /* dynamic */
 
-/* Font size */
-
-/* f-<integer:1-10>
-f-<unit> */
+.f-<integer:1-10> {}
 
 /* Font Styles */
 
-/* font-text
-font-heading
-font-link
-font-code
-font-quote */
+.font-caps {
+	font-family: arial;
+	font-weight: 500;
+	letter-spacing: 0.5em;
+	line-height: 1.4;
+	text-transform: uppercase;
+}
+
+.font-heading {
+	font-family: arial;
+	font-weight: 500;
+	letter-spacing: 0.2em;
+	line-height: 1.4;
+}
+
+.font-link {
+	font-family: arial;
+	letter-spacing: 0.2em;
+	line-height: 1.4;
+	text-decoration: underline;
+}
+
+.font-text {
+	font-family: arial;
+	letter-spacing: 0.2em;
+	line-height: 1.4;
+}
+
+/* static css */
 
 /* Letter spacing */
 
@@ -80,7 +101,11 @@ m<side>?-<unit>#{1,4} */
 	--ml: unset;
 }
 
-/* static css */
+/* Font size */
+
+.f {
+	font-size: var(--font-size, unset);
+}
 
 /* Width */
 
