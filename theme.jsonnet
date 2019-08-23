@@ -42,7 +42,6 @@
 	},
 	color: {},
 	font: {
-
 		style: {
 			text: {
 				'font family': 'arial',
