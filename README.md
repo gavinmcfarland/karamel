@@ -2,14 +2,16 @@
 
 A work in progress CSS framework
 
-## Font Size
+## Parts
+
+### Font Size
 
 Control the font size of any element using a range between `1` and `10`.
 
 - `f-<integer:1-10>`
 - `f-<unit>`
 
-## Font Style
+### Font Style
 
 Font styles allow you to apply several styles at once to maintain consistancy within your typography without being too restrictive. Combine with `font size` to maintain varied visuals without creating inconsistancies.
 
@@ -35,21 +37,21 @@ token: {
 }
 ``` -->
 
-## Letter Spacing
+### Letter Spacing
 
 Set the spacing between letters.
 
 - `ls-<integer>`
 - `ls-<unit>`
 
-## Line Height
+### Line Height
 
 Set the line height of text.
 
 - `lh-<integer>`
 - `lh-<unit>`
 
-## Color Theme
+### Color Theme
 
 Color schemes are useful when a design alternates between blocks of colour because often when a background colour changes other colours much change to accomodate that color.
 
@@ -86,7 +88,7 @@ token: {
 }
 ``` -->
 
-## Layout
+### Flex
 
 The easiest way to apply layout using the following _parts_.
 
@@ -98,7 +100,7 @@ The easiest way to apply layout using the following _parts_.
 
 To change the default flex behaviour pass an option through the plugin `flex({default: 'flex-block'})`.
 
-## Width
+### Width
 
 Specify width of an element.
 
@@ -108,7 +110,7 @@ Specify width of an element.
 - `w-flex` Sets width to available space
 - `w-viewport` Forces to width of viewport
 
-## Margin
+### Margin
 
 Specify margin on an element.
 
@@ -123,7 +125,7 @@ Specify margin on an element.
 - `m[x|y|i|bl]-<unit>` -->
 
 
-## Padding
+### Padding
 
 Specify padding on an element.
 
@@ -143,7 +145,7 @@ Use negative values to conpensate for a parent that has padding or margins or to
 - `-p-<integer:1-20>`
 - `-p-<unit>` -->
 
-## Border
+### Border
 
 Specify a border on an element
 
@@ -156,7 +158,45 @@ Specify a border on an element
 - `p[t|r|b|l]-[<length>|<percentage>|auto]`
 - `p[bl|i]-[<length>|<percentage>|auto]{1,2}`
 
-Use negative values to conpensate for a parent that has padding or margins or to increase the hit area of a link.
+Use negative values to compensate for a parent that has padding or margins or to increase the hit area of a link.
 
 - `-p-<integer:1-20>`
 - `-p-<unit>` -->
+ 
+
+## Configure
+
+```js
+{
+    color: {
+        theme: {
+            default: {
+                text: '',
+                heading: '',
+                link: '',
+                border: '',
+                background: ''
+            },
+            contrast: {},
+            reverse: {}
+        }
+    },
+    font: {
+        family: {
+            arial: {}
+        },
+        style: {
+            text: {
+                'font family': '',
+                'line height': '',
+                'letter spacing': '',
+                'font weight': ''
+            },
+            heading: {},
+            link: {},
+            code: {},
+            quote: {}  
+        }
+    }
+}
+```

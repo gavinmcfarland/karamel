@@ -29,20 +29,15 @@
 		'major twelfth'	: 3,
 		'double octave'	: 4
 	},
-	scale: {},
-	size: {
+	scale: {
 		font: [
 			std.ceil(16 * std.pow($.number['golden ratio'], n))
 			for n in std.range(0, 5)
 		],
-		margin: {},
-		padding: {},
-		border: {},
-		width: {},
+		spacing: [],
+		width: []
 	},
-	color: {
-
-	},
+	color: {},
 	font: {
 		style: {
 			text: {
