@@ -1,6 +1,6 @@
-export default ['template', 'margin', theme => {
+export default ['template', 'margin', ({ theme }) => {
 	let name = 'margin'
-	let abbr = 'm'
+	let abbr = theme.properties.margin.abbr
 
 	return `\
 .${abbr} {

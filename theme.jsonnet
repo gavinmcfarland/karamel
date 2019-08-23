@@ -1,9 +1,13 @@
 {
 	asset: {
-		font: [
-			'visby',
-			'akkurat'
-		]
+		font: {
+			visby: {
+				src: ''
+			},
+			akkurat: {
+				src: ''
+			},
+		}
 	},
 	number: {
 		'minor second'	: 1.067,
@@ -25,11 +29,20 @@
 		'major twelfth'	: 3,
 		'double octave'	: 4
 	},
-	font: {
-		size: [
+	scales: {},
+	size: {
+		font: [
 			std.ceil(16 * std.pow($.number['golden ratio'], n))
 			for n in std.range(0, 5)
 		],
+		margin: {},
+		padding: {},
+		border: {},
+		width: {},
+	},
+	color: {},
+	font: {
+
 		style: {
 			text: {
 				'font family': 'arial',
@@ -87,7 +100,6 @@
 		},
 		border: {
 			abbr: 'b'
-		},
-
+		}
 	}
 }

@@ -6,11 +6,11 @@ import structure from '../../structure'
 // let template = fs.readFileSync(__dirname + '/template.sqrl', 'utf8')
 
 export default ['template', 'font-style', ({ theme }) => {
-
+	let abbr = theme.properties.fontStyle.abbr
 	let o = theme.font.style
 	let string = ''
 	for (let modifier in o) {
-		string += `.font-${modifier} {\n`
+		string += `.${abbr}-${modifier} {\n`
 		for (let [prop, value] of Object.entries(o[modifier])) {
 			string += `	${v.kebabCase(prop)}: ${value};\n`
 		}

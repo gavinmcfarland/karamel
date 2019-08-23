@@ -1,0 +1,164 @@
+/* dynamic */
+
+.f-<integer:1-10> {}
+
+/* Font Styles */
+
+.font-caps {
+	font-family: arial;
+	font-weight: 500;
+	letter-spacing: 0.5em;
+	line-height: 1.4;
+	text-transform: uppercase;
+}
+
+.font-heading {
+	font-family: arial;
+	font-weight: 500;
+	letter-spacing: 0.2em;
+	line-height: 1.4;
+}
+
+.font-link {
+	font-family: arial;
+	letter-spacing: 0.2em;
+	line-height: 1.4;
+	text-decoration: underline;
+}
+
+.font-text {
+	font-family: arial;
+	letter-spacing: 0.2em;
+	line-height: 1.4;
+}
+
+/* static css */
+
+/* Letter spacing */
+
+/* ls-<integer>
+ls-<unit> */
+
+/* line height */
+
+/* lh-<integer>
+lh-<unit> */
+
+/* Color Scheme */
+
+/* color-reverse
+color-constrast
+color-<name> */
+
+.w {
+	width: var(--width);
+}
+
+.w>* {
+	--width: unset;
+}
+
+.max-w {
+	--max-width: value;
+	max-width: var(--max-width);
+}
+
+/* Padding */
+
+/* p<side>?-<integer:1-20>#{1,4}
+p<side>?-<unit>#{1,4} */
+
+.p {
+	padding-top: var(--pt, unset);
+	padding-right: var(--pr, unset);
+	padding-bottom: var(--pb, unset);
+	padding-left: var(--pl, unset);
+}
+
+.p>* {
+	--pt: unset;
+	--pr: unset;
+	--pb: unset;
+	--pl: unset;
+}
+
+/* Margin */
+
+/* m<side>?-<integer:1-20>#{1,4}
+m<side>?-<unit>#{1,4} */
+
+.m {
+	margin-top: var(--mt, unset);
+	margin-right: var(--mr, unset);
+	margin-bottom: var(--mb, unset);
+	margin-left: var(--ml, unset);
+}
+
+.m>* {
+	--mt: unset;
+	--mr: unset;
+	--mb: unset;
+	--ml: unset;
+}
+
+/* Font size */
+
+.f {
+	font-size: var(--font-size, unset);
+}
+
+/* Width */
+
+/* w-<integer:1-20>
+w-<unit>
+w-content Sets to width of content
+w-flex Sets width to available space
+w-viewport Forces to width of viewport */
+
+.w-viewport {
+	max-width: none !important;
+	width: 100vw;
+	position: relative;
+	left: 50%;
+	transform: translate(-50vw);
+}
+
+[class*="max-w"].w-viewport {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+[class*="max-w"].w-viewport>.wrapper {
+	max-width: var(--max-width);
+	box-sizing: content-box;
+	width: 100vw;
+	flex-shrink: 0;
+	flex-basis: 100%;
+}
+
+/* Flex */
+
+/* flex Applies default flex layout behaviour
+flex-block Makes all child elements behave like block elements and wraps them
+flex-inline Males all child elements behave like inline elements and wraps them
+flex-column Changes direction of layout
+flex-wrap */
+
+.flex-o {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.flex-o> :global(*) {
+	flex-basis: 100%;
+	flex-shrink: 0;
+}
+
+.flex-o :global([class*="w-"]) {
+	flex-basis: auto;
+}
+
+/* Border */
+
+/* b<side>?-[<width>|<style>|<color>|<align>]#{1,3} */

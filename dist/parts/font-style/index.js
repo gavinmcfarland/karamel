@@ -28,11 +28,12 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 // let template = fs.readFileSync(__dirname + '/template.sqrl', 'utf8')
 var _default = ['template', 'font-style', function (_ref) {
   var theme = _ref.theme;
+  var abbr = theme.properties.fontStyle.abbr;
   var o = theme.font.style;
   var string = '';
 
   for (var modifier in o) {
-    string += ".font-".concat(modifier, " {\n");
+    string += ".".concat(abbr, "-").concat(modifier, " {\n");
 
     for (var _i = 0, _Object$entries = Object.entries(o[modifier]); _i < _Object$entries.length; _i++) {
       var _Object$entries$_i = _slicedToArray(_Object$entries[_i], 2),

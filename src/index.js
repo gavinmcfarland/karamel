@@ -6,6 +6,7 @@ import margin from './parts/margin'
 import colorScheme from './parts/color-scheme'
 import padding from './parts/padding'
 import fontStyle from './parts/font-style';
+import flex from './parts/flex';
 
 // import parts from './models/parts';
 
@@ -17,6 +18,7 @@ mole.add(...width)
 mole.add(...maxWidth)
 mole.add(...colorScheme)
 mole.add(...fontStyle)
+mole.add(...flex)
 
 mole.build()
 

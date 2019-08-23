@@ -1,6 +1,6 @@
 export default ['template', 'padding', ({ theme }) => {
 	let name = 'padding'
-	let abbr = 'p'
+	let abbr = theme.properties.padding.abbr
 
 	return `\
 .${abbr} {
