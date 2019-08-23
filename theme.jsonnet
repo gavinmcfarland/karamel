@@ -61,7 +61,8 @@
 			},
 			column: {
 				abbr: 'c'
-			}
+			},
+			abbr: 'flex'
 		},
 		fontSize: {
 			abbr: 'f'
