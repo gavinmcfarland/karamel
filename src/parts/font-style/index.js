@@ -6,13 +6,7 @@ import structure from '../../structure'
 let template = fs.readFileSync(__dirname + '/template.sqrl', 'utf8')
 
 export default ['template', 'font-style', ({ theme }) => {
-	// let data = {
-	// 	rules: [{
-	// 		name: 'font-style',
-	// 		abbr: 'font',
-	// 		...structure(theme.font.style, ['modifiers', 'props', 'value'])
-	// 	}]
-	// }
+
 	let o = theme.font.style
 	let string = ''
 	for (let modifier in o) {
@@ -22,5 +16,6 @@ export default ['template', 'font-style', ({ theme }) => {
 		}
 		string += `}\n`
 	}
+
 	return string
 }]
