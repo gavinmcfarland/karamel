@@ -2,6 +2,16 @@
 
 A work in progress CSS framework
 
+## Usage
+
+```bash
+npm install karamel
+```
+
+```css
+@import 'karamel'
+```
+
 ## Parts
 
 ### Font Size

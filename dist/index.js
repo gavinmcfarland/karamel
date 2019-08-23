@@ -41,6 +41,16 @@ _mole["default"].add.apply(_mole["default"], _toConsumableArray(_colorScheme["de
 
 _mole["default"].add.apply(_mole["default"], _toConsumableArray(_fontStyle["default"]));
 
-_mole["default"].add.apply(_mole["default"], _toConsumableArray(_flex["default"]));
+_mole["default"].add.apply(_mole["default"], _toConsumableArray(_flex["default"])); // fs.readFile('src/app.css', (err, css) => {
+// 	postcss([precss, autoprefixer])
+// 		.process(css, { from: 'src/app.css', to: 'dest/app.css' })
+// 		.then(result => {
+// 			fs.writeFile('dest/app.css', result.css, () => true)
+// 			if (result.map) {
+// 				fs.writeFile('dest/app.css.map', result.map, () => true)
+// 			}
+// 		})
+// })
+
 
 _mole["default"].build(); // mole.build()
