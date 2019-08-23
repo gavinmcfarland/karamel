@@ -1,0 +1,80 @@
+.w {
+	width: var(--width);
+}
+.w > * {
+	--width: unset;
+}
+.w-viewport {
+	max-width: none !important;
+	width: 100vw;
+	position: relative;
+	left: 50%;
+	transform: translate(-50vw);
+}
+.w-viewport.max-w {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.w-viewport.max-w > .wrapper {
+	max-width: var(--max-width);
+	box-sizing: content-box;
+	width: 100vw;
+	flex-shrink: 0;
+	flex-basis: 100%;
+}
+.m {
+	margin: var(--margin, unset);
+}
+.m > * {
+	--margin: unset;
+}
+.max-w {
+	--max-width: value;
+	max-width: var(--max-width);
+}
+	
+.p {
+	padding-top: var(--pt, unset);
+	padding-right: var(--pr, unset);
+	padding-bottom: var(--pb, unset);
+	padding-left: var(--pl, unset);
+}
+.p > * {
+	--pt: unset;
+	--pr: unset;
+	--pb: unset;
+	--pl: unset;
+}
+.flex-open {
+	display: flex;
+	flex-wrap: wrap;
+}
+.flex-open > * {
+	flex-basis: 100%;
+	flex-shrink: 0;
+}
+.font-caps {
+	font-family: arial;
+	font-weight: 500;
+	letter-spacing: 0.5em;
+	line-height: 1.4;
+	text-transform: uppercase;
+}
+.font-heading {
+	font-family: arial;
+	font-weight: 500;
+	letter-spacing: 0.2em;
+	line-height: 1.4;
+}
+.font-link {
+	font-family: arial;
+	letter-spacing: 0.2em;
+	line-height: 1.4;
+	text-decoration: underline;
+}
+.font-text {
+	font-family: arial;
+	letter-spacing: 0.2em;
+	line-height: 1.4;
+}

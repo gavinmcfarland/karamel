@@ -3,8 +3,9 @@
 	"version": "1.0.0-alpha.1",
 	"description": "A CSS framework",
 	"main": "src/index.js",
+	"style": "dist/karamel.css",
 	"scripts": {
-		"build": "babel src -d dist --copy-files && node dist/index.js",
+		"build": "babel src -d bin --copy-files && node bin/index.js",
 		"test": "jest --verbose"
 	},
 	"repository": {
