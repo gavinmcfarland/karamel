@@ -58,6 +58,12 @@
 		}
 	},
 	property: {
+		sides: {
+			top: { abbr: 't' },
+			right: { abbr: 'r' },
+			bottom: { abbr: 'b' },
+			left: { abbr: 'l' }
+		},
 		flex: {
 			default: {
 
@@ -88,13 +94,25 @@
 		maxWidth: {
 			abbr: 'max-w'
 		},
-		padding: {
+		padding: self.sides + {
 			abbr: 'p'
 		},
-		margin: {
+		margin: self.sides + {
 			abbr: 'm'
 		},
-		border: {
+		border: self.sides + {
+			collapse: {},
+			color: {},
+			radius: {},
+			image: {
+				outset: {},
+				repeat: {},
+				slice: {},
+				source: {},
+				width: {},
+				spacing: {},
+				style: {}
+			},
 			abbr: 'b'
 		}
 	}

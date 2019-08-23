@@ -120,6 +120,13 @@ Specify width of an element.
 - `w-flex` Sets width to available space
 - `w-viewport` Forces to width of viewport
 
+### Height
+
+Specify height of an element.
+
+- `h-<integer:1-20>`
+- `h-<unit>`
+
 ### Margin
 
 Specify margin on an element.
