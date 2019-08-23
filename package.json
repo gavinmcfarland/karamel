@@ -16,6 +16,7 @@
 		"css"
 	],
 	"author": "Gavin McFarland",
+	"license": "CC0-1.0",
 	"bugs": {
 		"url": "https://github.com/limitlessloop/karamel/issues"
 	},
