@@ -104,16 +104,16 @@ local sides = {
 		},
 		border: {
 			[key]: sides[key] + {
-				width: null,
-				style: null,
-				color: null,
-				radius: null
+				width: {},
+				style: {},
+				color: {},
+				radius: {}
 			} + if key == 'bottom' || key == 'top' then {
 				left: sides['left'] + {
-					radius: null
+					radius: {}
 				},
 				right: sides['right'] + {
-					radius: null
+					radius: {}
 				}
 			} else {}
 			for key in std.objectFields(sides)
