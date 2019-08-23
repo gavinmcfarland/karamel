@@ -1,3 +1,11 @@
+local sides = {
+	top: { abbr: 't' },
+	right: { abbr: 'r' },
+	bottom: { abbr: 'b' },
+	left: { abbr: 'l' }
+};
+
+
 {
 	asset: {
 		font: {
@@ -58,12 +66,6 @@
 		}
 	},
 	property: {
-		sides: {
-			top: { abbr: 't' },
-			right: { abbr: 'r' },
-			bottom: { abbr: 'b' },
-			left: { abbr: 'l' }
-		},
 		flex: {
 			default: {
 
@@ -94,13 +96,28 @@
 		maxWidth: {
 			abbr: 'max-w'
 		},
-		padding: self.sides + {
+		padding: {
 			abbr: 'p'
 		},
-		margin: self.sides + {
+		margin: sides + {
 			abbr: 'm'
 		},
-		border: self.sides + {
+		border: {
+			[key]: sides[key] + {
+				width: null,
+				style: null,
+				color: null,
+				radius: null
+			} + if key == 'bottom' || key == 'top' then {
+				left: sides['left'] + {
+					radius: null
+				},
+				right: sides['right'] + {
+					radius: null
+				}
+			} else {}
+			for key in std.objectFields(sides)
+		} + {
 			collapse: {},
 			color: {},
 			radius: {},
