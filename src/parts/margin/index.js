@@ -1,6 +1,6 @@
 export default ['template', 'margin', ({ theme }) => {
 	let name = 'margin'
-	let abbr = theme.properties.margin.abbr
+	let abbr = theme.property.margin.abbr
 
 	return `\
 .${abbr} {

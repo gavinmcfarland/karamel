@@ -29,7 +29,7 @@
 		'major twelfth'	: 3,
 		'double octave'	: 4
 	},
-	scales: {},
+	scale: {},
 	size: {
 		font: [
 			std.ceil(16 * std.pow($.number['golden ratio'], n))
@@ -40,7 +40,9 @@
 		border: {},
 		width: {},
 	},
-	color: {},
+	color: {
+
+	},
 	font: {
 		style: {
 			text: {
@@ -60,7 +62,7 @@
 			}
 		}
 	},
-	properties: {
+	property: {
 		flex: {
 			default: {
 

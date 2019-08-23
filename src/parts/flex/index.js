@@ -1,7 +1,7 @@
 import { stripIndent } from 'common-tags'
 
 export default ['template', 'flex', ({ theme }) => {
-	let abbr = theme.properties.flex.abbr
+	let abbr = theme.property.flex.abbr
 
 	return stripIndent `\
 	.${abbr}-open {

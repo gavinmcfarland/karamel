@@ -22,7 +22,7 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 var _default = ['template', 'max-width', function (_ref) {
   var theme = _ref.theme;
   var name = 'max-width';
-  var abbr = theme.properties.maxWidth.abbr;
+  var abbr = theme.property.maxWidth.abbr;
   return (0, _commonTags.stripIndent)(_templateObject(), abbr, name, name, name);
 }];
 exports["default"] = _default;

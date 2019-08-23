@@ -28,7 +28,7 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 // let template = fs.readFileSync(__dirname + '/template.sqrl', 'utf8')
 var _default = ['template', 'font-style', function (_ref) {
   var theme = _ref.theme;
-  var abbr = theme.properties.fontStyle.abbr;
+  var abbr = theme.property.fontStyle.abbr;
   var o = theme.font.style;
   var string = '';
 

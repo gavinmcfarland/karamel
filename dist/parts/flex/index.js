@@ -21,7 +21,7 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
 
 var _default = ['template', 'flex', function (_ref) {
   var theme = _ref.theme;
-  var abbr = theme.properties.flex.abbr;
+  var abbr = theme.property.flex.abbr;
   return (0, _commonTags.stripIndent)(_templateObject(), abbr, abbr);
 }];
 exports["default"] = _default;
