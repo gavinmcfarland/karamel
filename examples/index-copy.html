@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>title</title>
+	<link rel="stylesheet" href="../dist/karamel.css" type="text/css">
+	<script src="https://unpkg.com/phtml"></script>
+	<script src="https://unpkg.com/phtml-utility-class"></script>
+	<script>
+		const html = `<my-component class="main">
+	<title>Super Title</title>
+	<text>Awesome Text</text>
+	</my-component>`;
+
+		phtml.use(phtmlUtilityClass( /* pluginOptions */ )).process(document).then(console.log);
+	</script>
+</head>
+
+<body>
+	<div class="p-10px,20px pt-50px">hello</div>
+	<h1 class="mt-10 mb-11">h1</h1>
+	<h2>h2</h2>
+	<h3>h3</h3>
+	<h4>h4</h4>
+	<h5>h5</h5>
+	<h6>h6</h6>
+
+	<p>text</p>
+
+</body>
+
+</html>

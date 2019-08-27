@@ -44,6 +44,7 @@
 		]
 	},
 	"devDependencies": {
-		"mole": "git+https://github.com/limitlessloop/mole.git"
+		"mole": "git+https://github.com/limitlessloop/mole.git",
+		"phtml-utility-class": "^1.1.4"
 	}
 }
