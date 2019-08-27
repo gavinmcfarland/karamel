@@ -1,6 +1,6 @@
 {
 	"name": "karamel",
-	"version": "1.0.0-alpha.1",
+	"version": "1.0.0-alpha.0",
 	"description": "A CSS framework",
 	"main": "src/index.js",
 	"style": "dist/karamel.css",
