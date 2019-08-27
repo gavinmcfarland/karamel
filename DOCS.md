@@ -68,9 +68,9 @@ Set the line height of text.
 Color schemes are useful when a design alternates between blocks of colour because often when a background colour changes other colours much change to accomodate that color.
 
 - `c` Applies the default colour theme
-- `c-reverse` Reverses the background and text colours of the default color theme
-- `c-constrast` Applies a contrasting color theme based on the default color theme.
-- `c-<name>` Create your own color themes
+<!-- - `c-reverse` Reverses the background and text colours of the default color theme -->
+<!-- - `c-constrast` Applies a contrasting color theme based on the default color theme.
+- `c-<name>` Create your own color themes -->
 
 
 ## Layout
@@ -138,7 +138,7 @@ The padding property allows you to use negative values when you want to apply th
 - `p[t|r|b|l]-[<length>|<percentage>|auto]`
 - `p[bl|i]-[<length>|<percentage>|auto]{1,2}`
 
-Use negative values to conpensate for a parent that has padding or margins or to increase the hit area of a link.
+Use negative values to compensate for a parent that has padding or margins or to increase the hit area of a link.
 
 - `-p-<integer:1-20>`
 - `-p-<unit>` -->
