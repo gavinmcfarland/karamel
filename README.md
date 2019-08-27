@@ -20,5 +20,5 @@ Or <a href="https://unpkg.com/karamel@1.0.0-alpha.0/dist/karamel.css" target="_s
 
 ## Docs
 
-View available class names and what they do in the [docs](https://github.com/limitlessloop/karamel/blob/master/DOC.md).
+View available class names and what they do in the [docs](https://github.com/limitlessloop/karamel/blob/master/DOCS.md).
 
