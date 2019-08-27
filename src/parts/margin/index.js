@@ -36,6 +36,23 @@ export default ['template', 'margin', ({ theme }) => {
 	--mr: unset;
 	--mb: unset;
 	--ml: unset;
+}\n`
+
+	string += `\
+.${abbr}-auto {
+	margin: auto;
+}
+.${abbr}l-auto {
+	margin-left: auto;
+}
+.${abbr}r-auto {
+	margin-right: auto;
+}
+.${abbr}b-auto {
+	margin-bottom: auto;
+}
+.${abbr}t-auto {
+	margin-top: auto;
 }`
 
 	return string
