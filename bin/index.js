@@ -8,7 +8,7 @@ var _maxWidth = _interopRequireDefault(require("./parts/max-width"));
 
 var _margin = _interopRequireDefault(require("./parts/margin"));
 
-var _colorScheme = _interopRequireDefault(require("./parts/color-scheme"));
+var _colorTheme = _interopRequireDefault(require("./parts/color-theme"));
 
 var _padding = _interopRequireDefault(require("./parts/padding"));
 
@@ -43,7 +43,7 @@ _mole["default"].add.apply(_mole["default"], _toConsumableArray(_width["default"
 
 _mole["default"].add.apply(_mole["default"], _toConsumableArray(_maxWidth["default"]));
 
-_mole["default"].add.apply(_mole["default"], _toConsumableArray(_colorScheme["default"]));
+_mole["default"].add.apply(_mole["default"], _toConsumableArray(_colorTheme["default"]));
 
 _mole["default"].add.apply(_mole["default"], _toConsumableArray(_fontStyle["default"]));
 

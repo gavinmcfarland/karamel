@@ -369,10 +369,16 @@
 	--mb: unset;
 	--ml: unset;
 }
-.max-w {
-	--max-width: value;
-	max-width: var(--max-width);
+.max-w-1 {
+	max-width: 300px
 }
+.max-w-2 {
+	max-width: 600px
+}
+.max-w-3 {
+	max-width: 1200px
+}
+
 .p-1 {
 	padding: 2px
 }
