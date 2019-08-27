@@ -42,7 +42,10 @@ local sides = {
 			std.ceil(16 * std.pow($.number['golden ratio'], n))
 			for n in std.range(0, 5)
 		],
-		spacing: [],
+		spacing: [
+			std.ceil(2 * std.pow($.number['octave'], n / 2))
+			for n in std.range(0, 20)
+		],
 		width: []
 	},
 	color: {},
