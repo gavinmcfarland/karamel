@@ -14,7 +14,7 @@ var _default = ['template', 'margin', function (_ref) {
   for (var i = 0; i < o.length; i++) {
     var modifier = o[i];
     string += ".".concat(abbr, "-").concat(i, " {\n");
-    string += "\tmargin: ".concat(modifier, "\n");
+    string += "\t".concat(name, ": ").concat(modifier, "\n");
     string += "}\n";
   }
 
@@ -25,7 +25,7 @@ var _default = ['template', 'margin', function (_ref) {
       for (var _i = 0; _i < o.length; _i++) {
         var _modifier = o[_i];
         string += ".".concat(abbr).concat(sideabbr, "-").concat(_i, " {\n");
-        string += "\tmargin-".concat(side, ": ").concat(_modifier, "\n");
+        string += "\t".concat(name, "-").concat(side, ": ").concat(_modifier, "\n");
         string += "}\n";
       }
     }

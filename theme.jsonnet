@@ -99,7 +99,7 @@ local sides = {
 		maxWidth: {
 			abbr: 'max-w'
 		},
-		padding: {
+		padding: sides + {
 			abbr: 'p'
 		},
 		margin: sides + {

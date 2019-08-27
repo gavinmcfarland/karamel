@@ -7,7 +7,7 @@ export default ['template', 'margin', ({ theme }) => {
 	for (let i = 0; i < o.length; i++) {
 		let modifier = o[i]
 		string += `.${abbr}-${i} {\n`
-		string += `	margin: ${modifier}\n`
+		string += `	${name}: ${modifier}\n`
 		string += `}\n`
 	}
 
@@ -18,7 +18,7 @@ export default ['template', 'margin', ({ theme }) => {
 			for (let i = 0; i < o.length; i++) {
 				let modifier = o[i]
 				string += `.${abbr}${sideabbr}-${i} {\n`
-				string += `	margin-${side}: ${modifier}\n`
+				string += `	${name}-${side}: ${modifier}\n`
 				string += `}\n`
 			}
 		}
@@ -26,10 +26,16 @@ export default ['template', 'margin', ({ theme }) => {
 
 	string += `\
 .${abbr} {
-	${name}: var(--${name}, unset);
+	${name}-top: var(--mt, unset);
+	${name}-right: var(--mr, unset);
+	${name}-bottom: var(--mb, unset);
+	${name}-left: var(--ml, unset);
 }
 .${abbr} > * {
-	--${name}: unset;
+	--mt: unset;
+	--mr: unset;
+	--mb: unset;
+	--ml: unset;
 }`
 
 	return string
