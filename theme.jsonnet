@@ -43,7 +43,7 @@ local sides = {
 			for n in std.range(0, 5)
 		],
 		spacing: [
-			std.ceil(2 * std.pow($.number['octave'], n / 2))
+			std.ceil(2 * std.pow($.number['octave'], n / 2)) + 'px'
 			for n in std.range(0, 20)
 		],
 		width: []
