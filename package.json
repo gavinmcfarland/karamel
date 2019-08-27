@@ -5,8 +5,7 @@
 	"main": "src/index.js",
 	"style": "dist/karamel.css",
 	"scripts": {
-		"build": "babel src -d bin --copy-files && node bin/index.js",
-		"test": "jest --verbose"
+		"build": "babel src -d bin --copy-files && node bin/index.js"
 	},
 	"repository": {
 		"type": "git",
