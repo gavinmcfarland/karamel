@@ -2,16 +2,16 @@
 
 - Move `mole.config.js` and theme into `scr/`
 - Complete the following parts
-  - `border`
+  - `border` 
   - `max-width`
-  - `width`
+  - `width` DONE
   - `height`
-  - `margin`
-  - `padding`
+  - `margin` DONE
+  - `padding` DONE
   - `line-height`
   - `letter-spacing`
   - `flex`
   - `color theme`
-  - `font size`
+  - `font size` DONE
 - Create or use a plugin to apply parts to css
 - Move parts/property definitions to separate file from theme

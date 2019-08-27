@@ -13,7 +13,7 @@ var _default = ['template', 'padding', function (_ref) {
 
   for (var i = 0; i < o.length; i++) {
     var modifier = o[i];
-    string += ".".concat(abbr, "-").concat(i, " {\n");
+    string += ".".concat(abbr, "-").concat(i + 1, " {\n");
     string += "\t".concat(name, ": ").concat(modifier, "\n");
     string += "}\n";
   }

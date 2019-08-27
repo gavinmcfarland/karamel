@@ -13,7 +13,7 @@ var _default = ['template', 'margin', function (_ref) {
 
   for (var i = 0; i < o.length; i++) {
     var modifier = o[i];
-    string += ".".concat(abbr, "-").concat(i, " {\n");
+    string += ".".concat(abbr, "-").concat(i + 1, " {\n");
     string += "\t".concat(name, ": ").concat(modifier, "\n");
     string += "}\n";
   }
@@ -31,7 +31,7 @@ var _default = ['template', 'margin', function (_ref) {
     }
   }
 
-  string += ".".concat(abbr, " {\n\t").concat(name, ": var(--").concat(name, ", unset);\n}\n.").concat(abbr, " > * {\n\t--").concat(name, ": unset;\n}");
+  string += ".".concat(abbr, " {\n\t").concat(name, "-top: var(--mt, unset);\n\t").concat(name, "-right: var(--mr, unset);\n\t").concat(name, "-bottom: var(--mb, unset);\n\t").concat(name, "-left: var(--ml, unset);\n}\n.").concat(abbr, " > * {\n\t--mt: unset;\n\t--mr: unset;\n\t--mb: unset;\n\t--ml: unset;\n}");
   return string;
 }];
 exports["default"] = _default;

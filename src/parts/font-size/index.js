@@ -1,7 +1,16 @@
-export default ['template', 'font-size', theme => {
+export default ['template', 'font-size', ({ theme }) => {
+	let name = 'font-size'
+	console.log(name)
+	let abbr = theme.property.fontSize.abbr
 
-	return `\
-	.f-${modifier} {
-		font-size: value;
-	}`
+	let o = theme.scale.font
+
+	let string = ''
+	for (let i = 0; i < o.length; i++) {
+		let modifier = o[i]
+		string += `.${abbr}-${i} {\n`
+		string += `	${name}: ${modifier}\n`
+		string += `}\n`
+	}
+	return string
 }]

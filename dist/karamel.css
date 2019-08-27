@@ -1,3 +1,12 @@
+.w-1 {
+	width: 300px
+}
+.w-2 {
+	width: 600px
+}
+.w-3 {
+	width: 1200px
+}
 .w {
 	width: var(--width);
 }
@@ -23,67 +32,67 @@
 	flex-shrink: 0;
 	flex-basis: 100%;
 }
-.m-0 {
+.m-1 {
 	margin: 2px
 }
-.m-1 {
+.m-2 {
 	margin: 3px
 }
-.m-2 {
+.m-3 {
 	margin: 4px
 }
-.m-3 {
+.m-4 {
 	margin: 6px
 }
-.m-4 {
+.m-5 {
 	margin: 8px
 }
-.m-5 {
+.m-6 {
 	margin: 12px
 }
-.m-6 {
+.m-7 {
 	margin: 16px
 }
-.m-7 {
+.m-8 {
 	margin: 23px
 }
-.m-8 {
+.m-9 {
 	margin: 32px
 }
-.m-9 {
+.m-10 {
 	margin: 46px
 }
-.m-10 {
+.m-11 {
 	margin: 64px
 }
-.m-11 {
+.m-12 {
 	margin: 91px
 }
-.m-12 {
+.m-13 {
 	margin: 128px
 }
-.m-13 {
+.m-14 {
 	margin: 182px
 }
-.m-14 {
+.m-15 {
 	margin: 256px
 }
-.m-15 {
+.m-16 {
 	margin: 363px
 }
-.m-16 {
+.m-17 {
 	margin: 512px
 }
-.m-17 {
+.m-18 {
 	margin: 725px
 }
-.m-18 {
+.m-19 {
 	margin: 1024px
 }
-.m-19 {
+.m-20 {
 	margin: 1449px
 }
-.m-20 {
+.m-21 {
 	margin: 2048px
 }
 .mb-0 {
@@ -339,77 +348,83 @@
 	margin-top: 2048px
 }
 .m {
-	margin: var(--margin, unset);
+	margin-top: var(--mt, unset);
+	margin-right: var(--mr, unset);
+	margin-bottom: var(--mb, unset);
+	margin-left: var(--ml, unset);
 }
 .m > * {
-	--margin: unset;
+	--mt: unset;
+	--mr: unset;
+	--mb: unset;
+	--ml: unset;
 }
 .max-w {
 	--max-width: value;
 	max-width: var(--max-width);
 }
 	
-.p-0 {
+.p-1 {
 	padding: 2px
 }
-.p-1 {
+.p-2 {
 	padding: 3px
 }
-.p-2 {
+.p-3 {
 	padding: 4px
 }
-.p-3 {
+.p-4 {
 	padding: 6px
 }
-.p-4 {
+.p-5 {
 	padding: 8px
 }
-.p-5 {
+.p-6 {
 	padding: 12px
 }
-.p-6 {
+.p-7 {
 	padding: 16px
 }
-.p-7 {
+.p-8 {
 	padding: 23px
 }
-.p-8 {
+.p-9 {
 	padding: 32px
 }
-.p-9 {
+.p-10 {
 	padding: 46px
 }
-.p-10 {
+.p-11 {
 	padding: 64px
 }
-.p-11 {
+.p-12 {
 	padding: 91px
 }
-.p-12 {
+.p-13 {
 	padding: 128px
 }
-.p-13 {
+.p-14 {
 	padding: 182px
 }
-.p-14 {
+.p-15 {
 	padding: 256px
 }
-.p-15 {
+.p-16 {
 	padding: 363px
 }
-.p-16 {
+.p-17 {
 	padding: 512px
 }
-.p-17 {
+.p-18 {
 	padding: 725px
 }
-.p-18 {
+.p-19 {
 	padding: 1024px
 }
-.p-19 {
+.p-20 {
 	padding: 1449px
 }
-.p-20 {
+.p-21 {
 	padding: 2048px
 }
 .pb-0 {
@@ -676,6 +691,40 @@
 	--pb: unset;
 	--pl: unset;
 }
+.f-0 {
+	font-size: 16px
+}
+.f-1 {
+	font-size: 19px
+}
+.f-2 {
+	font-size: 22px
+}
+.f-3 {
+	font-size: 26px
+}
+.f-4 {
+	font-size: 30px
+}
+.f-5 {
+	font-size: 35px
+}
+.f-6 {
+	font-size: 41px
+}
+.f-7 {
+	font-size: 48px
+}
+.f-8 {
+	font-size: 56px
+}
+.f-9 {
+	font-size: 65px
+}
+.f-10 {
+	font-size: 76px
+}
+
 .flex-open {
 	display: flex;
 	flex-wrap: wrap;

@@ -61,6 +61,12 @@ Set the line height of text.
 - `lh-<integer>`
 - `lh-<unit>`
 
+## Color
+
+- `c-<name>`
+- `bgc-<name>`
+- `bc-<name>`
+
 ### Color Theme
 
 Color schemes are useful when a design alternates between blocks of colour because often when a background colour changes other colours much change to accomodate that color.

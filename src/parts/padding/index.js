@@ -6,7 +6,7 @@ export default ['template', 'padding', ({ theme }) => {
 	let string = ''
 	for (let i = 0; i < o.length; i++) {
 		let modifier = o[i]
-		string += `.${abbr}-${i} {\n`
+		string += `.${abbr}-${i + 1} {\n`
 		string += `	${name}: ${modifier}\n`
 		string += `}\n`
 	}

@@ -16,6 +16,8 @@ var _fontStyle = _interopRequireDefault(require("./parts/font-style"));
 
 var _flex = _interopRequireDefault(require("./parts/flex"));
 
+var _fontSize = _interopRequireDefault(require("./parts/font-size"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _nonIterableSpread(); }
@@ -40,6 +42,8 @@ _mole["default"].add.apply(_mole["default"], _toConsumableArray(_maxWidth["defau
 _mole["default"].add.apply(_mole["default"], _toConsumableArray(_colorScheme["default"]));
 
 _mole["default"].add.apply(_mole["default"], _toConsumableArray(_fontStyle["default"]));
+
+_mole["default"].add.apply(_mole["default"], _toConsumableArray(_fontSize["default"]));
 
 _mole["default"].add.apply(_mole["default"], _toConsumableArray(_flex["default"])); // fs.readFile('src/app.css', (err, css) => {
 // 	postcss([precss, autoprefixer])
