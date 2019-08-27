@@ -68,10 +68,10 @@ local sides = {
 			text: {
 				'font family': 'arial',
 				'line height': '1.4',
-				'letter spacing': '0.2em'
+				'letter spacing': '0.1em'
 			},
 			heading: self.text + {
-				'font weight': '500'
+				'font weight': '600'
 			},
 			link: self.text + {
 				'text decoration': 'underline'
