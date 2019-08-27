@@ -11,6 +11,19 @@ export default ['template', 'margin', ({ theme }) => {
 		string += `}\n`
 	}
 
+	for (let side in theme.property.margin) {
+		if (side !== 'abbr') {
+			let sideabbr = theme.property.margin[side].abbr
+
+			for (let i = 0; i < o.length; i++) {
+				let modifier = o[i]
+				string += `.${abbr}${sideabbr}-${i} {\n`
+				string += `	margin-${side}: ${modifier}\n`
+				string += `}\n`
+			}
+		}
+	}
+
 	string += `\
 .${abbr} {
 	${name}: var(--${name}, unset);

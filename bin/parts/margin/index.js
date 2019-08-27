@@ -18,6 +18,19 @@ var _default = ['template', 'margin', function (_ref) {
     string += "}\n";
   }
 
+  for (var side in theme.property.margin) {
+    if (side !== 'abbr') {
+      var sideabbr = theme.property.margin[side].abbr;
+
+      for (var _i = 0; _i < o.length; _i++) {
+        var _modifier = o[_i];
+        string += ".".concat(abbr).concat(sideabbr, "-").concat(_i, " {\n");
+        string += "\tmargin-".concat(side, ": ").concat(_modifier, "\n");
+        string += "}\n";
+      }
+    }
+  }
+
   string += ".".concat(abbr, " {\n\t").concat(name, ": var(--").concat(name, ", unset);\n}\n.").concat(abbr, " > * {\n\t--").concat(name, ": unset;\n}");
   return string;
 }];
