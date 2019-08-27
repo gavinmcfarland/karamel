@@ -65,11 +65,11 @@ Set the line height of text.
 
 ### Theme
 
-Color schemes are useful when a design alternates between blocks of colour because often when a background colour changes other colours much change to accomodate that color.
+Color themes are useful when a design alternates between blocks of colour because often when a background colour changes other colours much change to accommodate that color.
 
 - `c` Applies the default colour theme
 <!-- - `c-reverse` Reverses the background and text colours of the default color theme -->
-<!-- - `c-constrast` Applies a contrasting color theme based on the default color theme.
+<!-- - `c-contrast` Applies a contrasting color theme based on the default color theme.
 - `c-<name>` Create your own color themes -->
 
 
