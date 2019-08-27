@@ -50,7 +50,17 @@ local sides = {
 	},
 	color: {
 		primary: '#000000',
-		secondary: '#FFFFFF'
+		secondary: '#FFFFFF',
+		theme: {
+			default: {
+				color: '#F0F0F0',
+				backgroundColor: '#000000',
+				headingColor: '#FFFFFF',
+				linkColor: '#D92020',
+				codeColor: 'pink',
+				borderColor: '#F0F0F0'
+			}
+		}
 	},
 	font: {
 		style: {
@@ -87,11 +97,14 @@ local sides = {
 			},
 			abbr: 'flex'
 		},
+		colorTheme: {
+			abbr: 'c'
+		},
 		fontSize: {
 			abbr: 'f'
 		},
 		fontStyle: {
-			abbr: 'font'
+			abbr: 'f'
 		},
 		width: {
 			content: {},

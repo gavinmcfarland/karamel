@@ -1,15 +1,20 @@
-export default ['template', 'max-width', theme => {
+import v from 'voca'
 
-	return `\
-	{% for rule in rules -%}
-	{% if rule.name === 'default' %}
-	.color {
-	{% else %}
-	.color-{{rule.modifier}} {
-	{% endif %}
-		{%- for decl in this %}
-		{{decl.name | kebabcase}}: {{decl.value | join(' ')}};
-		{%- endfor %}
+export default ['template', 'color-theme', ({ theme }) => {
+	let abbr = theme.property.colorTheme.abbr
+	let o = theme.color.theme
+	let string = ''
+	for (let modifier in o) {
+		if (modifier === 'default') {
+			string += `.${abbr} {\n`
+		} else {
+			string += `.${abbr}-${modifier} {\n`
+		}
+		for (let [prop, value] of Object.entries(o[modifier])) {
+			string += `	${v.kebabCase(prop)}: ${value};\n`
+		}
+		string += `}\n`
 	}
-	{% endfor %}`
+
+	return string
 }]

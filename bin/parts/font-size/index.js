@@ -9,7 +9,7 @@ var _default = ['template', 'font-size', function (_ref) {
   var name = 'font-size';
   console.log(name);
   var abbr = theme.property.fontSize.abbr;
-  var o = theme.scale.font;
+  var o = theme.size.font;
   var string = '';
 
   for (var i = 0; i < o.length; i++) {

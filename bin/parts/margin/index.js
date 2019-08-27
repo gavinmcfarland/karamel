@@ -8,7 +8,7 @@ var _default = ['template', 'margin', function (_ref) {
   var theme = _ref.theme;
   var name = 'margin';
   var abbr = theme.property.margin.abbr;
-  var o = theme.scale.spacing;
+  var o = theme.size.spacing;
   var string = '';
 
   for (var i = 0; i < o.length; i++) {

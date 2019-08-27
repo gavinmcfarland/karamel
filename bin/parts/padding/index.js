@@ -8,7 +8,7 @@ var _default = ['template', 'padding', function (_ref) {
   var theme = _ref.theme;
   var name = 'padding';
   var abbr = theme.property.padding.abbr;
-  var o = theme.scale.spacing;
+  var o = theme.size.spacing;
   var string = '';
 
   for (var i = 0; i < o.length; i++) {

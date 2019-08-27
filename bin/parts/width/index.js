@@ -11,7 +11,7 @@ var _default = ['template', 'width', function (_ref) {
   var theme = _ref.theme;
   var name = 'width';
   var abbr = theme.property.width.abbr;
-  var o = theme.scale.width;
+  var o = theme.size.width;
   var string = '';
 
   for (var i = 0; i < o.length; i++) {
