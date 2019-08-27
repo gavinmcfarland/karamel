@@ -49,16 +49,17 @@ local sides = {
 		width: ['300px', '600px', '1200px']
 	},
 	color: {
-		primary: '#000000',
+		primary: 'red',
 		secondary: '#FFFFFF',
+		tertiary: '#000000',
 		theme: {
 			default: {
-				color: '#F0F0F0',
-				backgroundColor: '#000000',
-				headingColor: '#FFFFFF',
-				linkColor: '#D92020',
-				codeColor: 'pink',
-				borderColor: '#F0F0F0'
+				text: '#F0F0F0',
+				background: '#000000',
+				heading: '#FFFFFF',
+				link: '#D92020',
+				code: 'pink',
+				border: '#F0F0F0'
 			}
 		}
 	},
@@ -106,11 +107,17 @@ local sides = {
 		fontStyle: {
 			abbr: 'f'
 		},
+		fontColor: {
+			abbr: 'f'
+		},
 		width: {
 			content: {},
 			flex: {},
 			viewport: {},
 			abbr: 'w'
+		},
+		height: {
+			abbr: 'h'
 		},
 		maxWidth: {
 			abbr: 'max-w'

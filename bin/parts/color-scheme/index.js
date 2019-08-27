@@ -35,12 +35,35 @@ var _default = ['template', 'color-theme', function (_ref) {
           prop = _Object$entries$_i[0],
           value = _Object$entries$_i[1];
 
-      string += "\t".concat(_voca["default"].kebabCase(prop), ": ").concat(value, ";\n");
+      if (_voca["default"].kebabCase(prop) === 'text') {
+        string += "\t--color: ".concat(value, ";\n");
+      }
+
+      if (_voca["default"].kebabCase(prop) === 'heading') {
+        string += "\t--heading-color: ".concat(value, ";\n");
+      }
+
+      if (_voca["default"].kebabCase(prop) === 'link') {
+        string += "\t--link-color: ".concat(value, ";\n");
+      }
+
+      if (_voca["default"].kebabCase(prop) === 'quote') {
+        string += "\t--quote-color: ".concat(value, ";\n");
+      }
+
+      if (_voca["default"].kebabCase(prop) === 'border') {
+        string += "\t--border-color: ".concat(value, ";\n");
+      }
+
+      if (_voca["default"].kebabCase(prop) === 'background') {
+        string += "\t--background-color: ".concat(value, ";\n");
+      }
     }
 
     string += "}\n";
   }
 
+  string += ".".concat(abbr, " {\n\tcolor: var(--color);\n\tbackground-color: var(--background-color);\n}");
   return string;
 }];
 exports["default"] = _default;

@@ -13,9 +13,9 @@ Control the font size of any element using a range between `1` and `10`.
 
 - `f-<color>`
 
-### Style
+### Types
 
-Font styles allow you to apply several styles at once to maintain consistancy within your typography without being too restrictive. Combine with `font size` to maintain varied visuals without creating inconsistancies.
+Font types allow you to apply several styles at once to maintain consistency within your typography without being too restrictive. Combine with `font size` to maintain varied visuals without creating inconsistencies.
 
 - `f-text`
 - `f-heading`
@@ -80,10 +80,10 @@ Color schemes are useful when a design alternates between blocks of colour becau
 The easiest way to apply layout using the following _parts_.
 
 - `flex` Applies default flex layout behaviour
-- `flex-block` Makes all child elements behave like block elements and wraps them
+<!-- - `flex-block` Makes all child elements behave like block elements and wraps them
 - `flex-inline` Males all child elements behave like inline elements and wraps them
 - `flex-column` Changes direction of layout
-- `flex-wrap`
+- `flex-wrap` -->
 
 To change the default flex behaviour pass an option through the plugin `flex({default: 'flex-block'})`.
 
