@@ -3,7 +3,7 @@ export default ['template', 'font-size', ({ theme }) => {
 	console.log(name)
 	let abbr = theme.property.fontSize.abbr
 
-	let o = theme.scale.font
+	let o = theme.size.font
 
 	let string = ''
 	for (let i = 0; i < o.length; i++) {

@@ -2,7 +2,7 @@ export default ['template', 'margin', ({ theme }) => {
 	let name = 'margin'
 	let abbr = theme.property.margin.abbr
 
-	let o = theme.scale.spacing
+	let o = theme.size.spacing
 	let string = ''
 	for (let i = 0; i < o.length; i++) {
 		let modifier = o[i]

@@ -4,7 +4,7 @@ export default ['template', 'width', ({ theme }) => {
 	let name = 'width'
 	let abbr = theme.property.width.abbr
 
-	let o = theme.scale.width
+	let o = theme.size.width
 
 	let string = ''
 	for (let i = 0; i < o.length; i++) {

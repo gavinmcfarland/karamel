@@ -37,7 +37,7 @@ local sides = {
 		'major twelfth'	: 3,
 		'double octave'	: 4
 	},
-	scale: {
+	size: {
 		font: [
 			std.ceil(16 * std.pow($.number['golden ratio'], n)) + 'px'
 			for n in std.range(0, 10)

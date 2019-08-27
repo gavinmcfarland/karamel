@@ -2,7 +2,7 @@ export default ['template', 'padding', ({ theme }) => {
 	let name = 'padding'
 	let abbr = theme.property.padding.abbr
 
-	let o = theme.scale.spacing
+	let o = theme.size.spacing
 	let string = ''
 	for (let i = 0; i < o.length; i++) {
 		let modifier = o[i]
