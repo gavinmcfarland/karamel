@@ -39,16 +39,19 @@ local sides = {
 	},
 	scale: {
 		font: [
-			std.ceil(16 * std.pow($.number['golden ratio'], n))
-			for n in std.range(0, 5)
+			std.ceil(16 * std.pow($.number['golden ratio'], n)) + 'px'
+			for n in std.range(0, 10)
 		],
 		spacing: [
 			std.ceil(2 * std.pow($.number['octave'], n / 2)) + 'px'
 			for n in std.range(0, 20)
 		],
-		width: []
+		width: ['300px', '600px', '1200px']
 	},
-	color: {},
+	color: {
+		primary: '#000000',
+		secondary: '#FFFFFF'
+	},
 	font: {
 		style: {
 			text: {
@@ -94,7 +97,7 @@ local sides = {
 			content: {},
 			flex: {},
 			viewport: {},
-			abbr: 'c'
+			abbr: 'w'
 		},
 		maxWidth: {
 			abbr: 'max-w'
