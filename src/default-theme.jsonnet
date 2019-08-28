@@ -157,6 +157,9 @@ local sides = {
 				style: {}
 			},
 			abbr: 'b'
-		}
+		},
+		zIndex: {
+			abbr: 'z'
+		},
 	}
 }

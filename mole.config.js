@@ -10,7 +10,8 @@ module.exports = {
 		'font-color',
 		'flex',
 		'font-style',
-		'color-theme'
+		'color-theme',
+		'z-index'
 	],
 	output: { file: '/dist/karamel.css' }
 }

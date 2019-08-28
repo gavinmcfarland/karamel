@@ -10,6 +10,7 @@ import flex from './parts/flex';
 import fontSize from './parts/font-size';
 import height from './parts/height';
 import fontColor from './parts/font-color';
+import zIndex from './parts/z-index';
 
 // import parts from './models/parts';
 
@@ -25,6 +26,7 @@ mole.add(...fontSize)
 mole.add(...flex)
 mole.add(...height)
 mole.add(...fontColor)
+mole.add(...zIndex)
 
 // fs.readFile('src/app.css', (err, css) => {
 // 	postcss([precss, autoprefixer])

@@ -22,6 +22,8 @@ var _height = _interopRequireDefault(require("./parts/height"));
 
 var _fontColor = _interopRequireDefault(require("./parts/font-color"));
 
+var _zIndex = _interopRequireDefault(require("./parts/z-index"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _nonIterableSpread(); }
@@ -53,7 +55,9 @@ _mole["default"].add.apply(_mole["default"], _toConsumableArray(_flex["default"]
 
 _mole["default"].add.apply(_mole["default"], _toConsumableArray(_height["default"]));
 
-_mole["default"].add.apply(_mole["default"], _toConsumableArray(_fontColor["default"])); // fs.readFile('src/app.css', (err, css) => {
+_mole["default"].add.apply(_mole["default"], _toConsumableArray(_fontColor["default"]));
+
+_mole["default"].add.apply(_mole["default"], _toConsumableArray(_zIndex["default"])); // fs.readFile('src/app.css', (err, css) => {
 // 	postcss([precss, autoprefixer])
 // 		.process(css, { from: 'src/app.css', to: 'dest/app.css' })
 // 		.then(result => {
