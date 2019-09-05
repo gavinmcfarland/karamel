@@ -17,8 +17,7 @@ function _iterableToArrayLimit(arr, i) { var _arr = []; var _n = true; var _d = 
 
 function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
-var _default = ['template', 'color-theme', function (_ref) {
-  var theme = _ref.theme;
+var _default = ['template', 'color-theme', function (theme) {
   var abbr = theme.property.colorTheme.abbr;
   var o = theme.color.theme;
   var string = '';

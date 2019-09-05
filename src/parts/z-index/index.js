@@ -1,6 +1,6 @@
 import { stripIndent } from 'common-tags'
 
-export default ['template', 'z-index', ({ theme }) => {
+export default ['template', 'z-index', (theme) => {
 	let name = 'z-index'
 	let abbr = theme.property.zIndex.abbr
 

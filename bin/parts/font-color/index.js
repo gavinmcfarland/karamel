@@ -18,8 +18,7 @@ var _structure = _interopRequireDefault(require("../../structure"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 // let template = fs.readFileSync(__dirname + '/template.sqrl', 'utf8')
-var _default = ['template', 'font-color', function (_ref) {
-  var theme = _ref.theme;
+var _default = ['template', 'font-color', function (theme) {
   var abbr = theme.property.fontColor.abbr;
   var o = theme.color;
   var string = '';

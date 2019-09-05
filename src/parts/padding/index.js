@@ -1,4 +1,4 @@
-export default ['template', 'padding', ({ theme }) => {
+export default ['template', 'padding', (theme) => {
 	let name = 'padding'
 	let abbr = theme.property.padding.abbr
 

@@ -5,7 +5,7 @@ import render from '../../render'
 import structure from '../../structure'
 // let template = fs.readFileSync(__dirname + '/template.sqrl', 'utf8')
 
-export default ['template', 'font-style', ({ theme }) => {
+export default ['template', 'font-style', (theme) => {
 	let abbr = theme.property.fontStyle.abbr
 	let o = theme.font.style
 	let string = ''

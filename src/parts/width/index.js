@@ -1,6 +1,6 @@
 import { stripIndent } from 'common-tags'
 
-export default ['template', 'width', ({ theme }) => {
+export default ['template', 'width', (theme) => {
 	let name = 'width'
 	let abbr = theme.property.width.abbr
 

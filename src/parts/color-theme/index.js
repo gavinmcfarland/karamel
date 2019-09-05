@@ -1,6 +1,6 @@
 import v from 'voca'
 
-export default ['template', 'color-theme', ({ theme }) => {
+export default ['template', 'color-theme', (theme) => {
 	let abbr = theme.property.colorTheme.abbr
 	let o = theme.color.theme
 	let string = ''

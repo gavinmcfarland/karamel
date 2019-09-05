@@ -7,8 +7,7 @@ exports["default"] = void 0;
 
 var _commonTags = require("common-tags");
 
-var _default = ['template', 'z-index', function (_ref) {
-  var theme = _ref.theme;
+var _default = ['template', 'z-index', function (theme) {
   var name = 'z-index';
   var abbr = theme.property.zIndex.abbr;
   var string = '';

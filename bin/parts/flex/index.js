@@ -19,8 +19,7 @@ function _templateObject() {
 
 function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
 
-var _default = ['template', 'flex', function (_ref) {
-  var theme = _ref.theme;
+var _default = ['template', 'flex', function (theme) {
   var abbr = theme.property.flex.abbr;
   return (0, _commonTags.stripIndent)(_templateObject(), abbr, abbr);
 }];

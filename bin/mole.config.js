@@ -2,8 +2,8 @@
 
 module.exports = {
   theme: 'default-theme.jsonnet',
-  template: ['width', 'height', 'margin', 'max-width', 'padding', 'font-size', 'font-color', 'flex', 'font-style', 'color-theme'],
+  template: ['width', 'height', 'margin', 'max-width', 'padding', 'font-size', 'font-color', 'flex', 'font-style', 'color-theme', 'z-index'],
   output: {
-    file: '/dist/karamel.css'
+    file: '../dist/karamel.css'
   }
 };

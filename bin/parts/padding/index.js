@@ -4,8 +4,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports["default"] = void 0;
-var _default = ['template', 'padding', function (_ref) {
-  var theme = _ref.theme;
+var _default = ['template', 'padding', function (theme) {
   var name = 'padding';
   var abbr = theme.property.padding.abbr;
   var o = theme.size.spacing;

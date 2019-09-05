@@ -7,8 +7,7 @@ exports["default"] = void 0;
 
 var _commonTags = require("common-tags");
 
-var _default = ['template', 'max-width', function (_ref) {
-  var theme = _ref.theme;
+var _default = ['template', 'max-width', function (theme) {
   var name = 'max-width';
   var abbr = theme.property.maxWidth.abbr;
   var o = theme.size.width;

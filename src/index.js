@@ -13,7 +13,7 @@ import fontColor from './parts/font-color';
 import zIndex from './parts/z-index';
 
 // import parts from './models/parts';
-
+mole.config('src/mole.config.js')
 // mole.add(...width)
 // mole.add(...parts)
 mole.add(...margin)

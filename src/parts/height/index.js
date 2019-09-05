@@ -1,6 +1,6 @@
 import { stripIndent } from 'common-tags'
 
-export default ['template', 'height', ({ theme }) => {
+export default ['template', 'height', (theme) => {
 	let name = 'height'
 	let abbr = theme.property.height.abbr
 
