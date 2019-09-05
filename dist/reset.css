@@ -1,0 +1,28 @@
+ul {
+	list-style: none;
+	padding: unset;
+	margin: unset;
+}
+
+table {
+	width: 100%;
+}
+
+td,
+th {
+	padding: unset;
+}
+
+body * {
+	border-color: var(--border-color);
+}
+
+html {
+	/* font-size: 62.5%; */
+}
+
+xmp {
+	margin: unset;
+	font-family: inherit;
+	display: inline-block
+}

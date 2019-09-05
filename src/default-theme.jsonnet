@@ -53,7 +53,16 @@ local sides = {
 		secondary: '#FFFFFF',
 		tertiary: '#000000',
 		theme: {
-			default: {
+			default: self.light,
+			light: {
+				text: '#000000',
+				background: '#FFFFFF',
+				heading: '#000000',
+				link: '#D92020',
+				code: 'pink',
+				border: '#F0F0F0'
+			},
+			dark: {
 				text: '#F0F0F0',
 				background: '#000000',
 				heading: '#FFFFFF',
@@ -67,19 +76,22 @@ local sides = {
 		style: {
 			text: {
 				'font family': 'arial',
-				'line height': '1.4',
-				'letter spacing': '0.1em'
+				'line height': '1.4'
 			},
 			heading: self.text + {
-				'font weight': '600'
+				'font weight': '500'
 			},
 			link: self.text + {
 				'text decoration': 'underline'
 			},
 			caps: self.heading + {
-				'letter spacing': '0.5em',
-				'text transform': 'uppercase'
-			}
+				'letter spacing': '0.23em',
+				'text transform': 'uppercase',
+				'font weight': '600'
+			},
+			code: self.text + {
+				'font size': '0.9em'
+			},
 		}
 	},
 	property: {

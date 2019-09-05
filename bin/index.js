@@ -35,7 +35,24 @@ function _iterableToArray(iter) { if (Symbol.iterator in Object(iter) || Object.
 function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } }
 
 // import parts from './models/parts';
-_mole["default"].config('src/mole.config.js'); // mole.add(...width)
+_mole["default"].config('src/mole.config.js'); // mole.theme({
+// 	color: {
+// 		primary: 'red',
+// 		secondary: '#FFFFFF',
+// 		tertiary: '#000000',
+// 		theme: {
+// 			default: {
+// 				text: 'red',
+// 				background: 'red',
+// 				heading: '#FFFFFF',
+// 				link: '#D92020',
+// 				code: 'pink',
+// 				border: '#F0F0F0'
+// 			}
+// 		}
+// 	},
+// })
+// mole.add(...width)
 // mole.add(...parts)
 
 
