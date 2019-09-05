@@ -2,8 +2,8 @@
 
 <p align="center">
     <a href="https://www.npmjs.com/package/karamel"><img src="https://img.shields.io/npm/v/karamel.svg"></a>
-    <a href="https://travis-ci.org/limitlessloop/karamel"><img src="https://img.shields.io/travis/limitlessloop/karamel.svg"></a>
-    <a href="https://discord.gg/BDEvF8m"><img src="https://img.shields.io/discord/617327499554193445"></a>    
+    <!-- <a href="https://travis-ci.org/limitlessloop/karamel"><img src="https://img.shields.io/travis/limitlessloop/karamel.svg"></a> -->
+    <!-- <a href="https://discord.gg/BDEvF8m"><img src="https://img.shields.io/discord/617327499554193445"></a>     -->
 </p>
 
 <!-- [![NPM Version][npm-img]][npm-url]
