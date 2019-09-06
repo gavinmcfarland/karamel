@@ -722,41 +722,41 @@
 	--pl: unset;
 }
 .f-0 {
-	font-size: 0.75rem
+	font-size: 16px
 }
 .f-1 {
-	font-size: 0.875rem
+	font-size: 18px
 }
 .f-2 {
-	font-size: 1rem
+	font-size: 21px
 }
 .f-3 {
-	font-size: 1.125rem
+	font-size: 23px
 }
 .f-4 {
-	font-size: 1.25rem
+	font-size: 26px
 }
 .f-5 {
-	font-size: 1.5rem
+	font-size: 29px
 }
 .f-6 {
-	font-size: 1.875rem
+	font-size: 33px
 }
 .f-7 {
-	font-size: 2.25rem
+	font-size: 37px
 }
 .f-8 {
-	font-size: 3rem
+	font-size: 42px
 }
 .f-9 {
-	font-size: 4rem
+	font-size: 47px
 }
 .f-10 {
 	font-size: 52px
 }
 
 .f-primary {
-	color: green;
+	color: red;
 }
 .f-secondary {
 	color: #FFFFFF;

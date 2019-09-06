@@ -3,16 +3,22 @@
 	"version": "1.0.0-alpha.1",
 	"description": "A CSS framework",
 	"main": "src/index.js",
+	"bin": {
+		"mole/karamel": "bin/karamel",
+		"karamel": "bin/karamel"
+	},
 	"style": "dist/karamel.css",
 	"scripts": {
 		"build": "babel src -d bin --copy-files && node bin/index.js"
 	},
+	"unpkg": "dist/karamel.css",
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/limitlessloop/karamel.git"
 	},
 	"keywords": [
-		"css"
+		"css",
+		"cli"
 	],
 	"author": "Gavin McFarland",
 	"license": "CC0-1.0",
@@ -25,12 +31,17 @@
 		"@babel/core": "^7.5.5",
 		"@babel/plugin-proposal-class-properties": "^7.5.5",
 		"@babel/preset-env": "^7.5.5",
+		"arg": "^4.1.1",
 		"babel-plugin-add-module-exports": "^1.0.2",
 		"babel-plugin-rewire": "^1.2.0",
+		"chalk": "^2.4.2",
 		"common-tags": "^1.8.0",
+		"esm": "^3.2.25",
+		"inquirer": "^7.0.0",
 		"jest": "^24.9.0",
 		"lodash": "^4.17.15",
 		"lodash.merge": "^4.6.2",
+		"ncp": "^2.0.0",
 		"nunjucks": "^3.2.0",
 		"prettier": "^1.18.2",
 		"squirrelly": "^7.4.0",

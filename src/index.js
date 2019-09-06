@@ -40,15 +40,19 @@ mole.build()
 
 // Need an option to avoid build and just output string to pass straight to postcss
 
-fs.readFile('dist/main.css', (err, css) => {
-	postcss([atImport, customSelectors, extend])
-		.process(css, { from: 'dist/main.css', to: 'dist/output.css' })
-		.then(result => {
-			fs.writeFile('dist/output.css', result.css, () => true)
-			if (result.map) {
-				fs.writeFile('dist/output.css.map', result.map, () => true)
-			}
-		})
-})
+export function buildPostCSS(input, output) {
+	fs.readFile(input, (err, css) => {
+		postcss([atImport, customSelectors, extend])
+			.process(css, { from: input, to: output })
+			.then(result => {
+				fs.writeFile(output, result.css, () => true)
+				if (result.map) {
+					fs.writeFile(output + '.map', result.map, () => true)
+				}
+			})
+	})
+}
+
+buildPostCSS('dist/main.css', 'dist/output.css')
 
 // console.log(mole.debug)

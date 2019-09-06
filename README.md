@@ -18,48 +18,54 @@ Karamel is a CSS framework that is customisable and simple to use.
 
 ## Usage
 
-Use in your node project using the following
+Download directly from a CDN using unpkg
+
+```bash
+https://unpkg.com/karamel/dist/karamel.css
+```
+
+<!-- ### Customise -->
+
+Or use in your node project using the following
 
 ```bash
 npm install karamel
 ```
 
-In your stylesheets using PostCSS import
+And in your stylesheets using PostCSS import
 
 ```css
 @import 'karamel'
 ```
 
-Or <a href="https://unpkg.com/karamel@1.0.0-alpha.0/dist/karamel.css" target="_self" download>download</a> the raw file to use directly in your project.
+<!-- Customise with a theme file at the root of your project called `karamel.theme.jsonnet`.
 
-<!-- ## Customise
+You can use the command line tool to create a base file.
 
-To customise `Karamel` you can create a file at the root of your project called `karamel.theme.jsonnet`.
+```bash
+npm karamel init
+```
+
+Which will create a blank theme at the root of your project
 
 ```js
+// karamel.theme.jsonnet
 {
-    color: {
-        green: '',
-        red: '',
-        blue: ''
-    },
-    font: {
-        family: {
-            arial: ''
-        }
-    },
-    size: {
-        font: [
-            12,
-            14,
-            16,
-            20,
-            24,
-            30
-        ]
-    },
+    color: {},
+    size: {},
+    font: {}
 }
+``` -->
 
+<!-- Add PostCSS plugin
+
+```js
+// Using postcss.config.js
+module.exports = {
+  plugins: [
+    require('karamel')
+  ]
+}
 ``` -->
 
 ## Docs

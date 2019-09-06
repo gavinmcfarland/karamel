@@ -1,5 +1,10 @@
 "use strict";
 
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.buildPostCSS = buildPostCSS;
+
 var _mole = _interopRequireDefault(require("mole"));
 
 var _fs = _interopRequireDefault(require("fs"));
@@ -80,19 +85,23 @@ _mole["default"].add.apply(_mole["default"], _toConsumableArray(_zIndex["default
 _mole["default"].build(); // Need an option to avoid build and just output string to pass straight to postcss
 
 
-_fs["default"].readFile('dist/main.css', function (err, css) {
-  (0, _postcss["default"])([_postcssImport["default"], _postcssCustomSelectors["default"], _postcssExtendRule["default"]]).process(css, {
-    from: 'dist/main.css',
-    to: 'dist/output.css'
-  }).then(function (result) {
-    _fs["default"].writeFile('dist/output.css', result.css, function () {
-      return true;
-    });
-
-    if (result.map) {
-      _fs["default"].writeFile('dist/output.css.map', result.map, function () {
+function buildPostCSS(input, output) {
+  _fs["default"].readFile(input, function (err, css) {
+    (0, _postcss["default"])([_postcssImport["default"], _postcssCustomSelectors["default"], _postcssExtendRule["default"]]).process(css, {
+      from: input,
+      to: output
+    }).then(function (result) {
+      _fs["default"].writeFile(output, result.css, function () {
         return true;
       });
-    }
+
+      if (result.map) {
+        _fs["default"].writeFile(output + '.map', result.map, function () {
+          return true;
+        });
+      }
+    });
   });
-}); // console.log(mole.debug)
+}
+
+buildPostCSS('dist/main.css', 'dist/output.css'); // console.log(mole.debug)
