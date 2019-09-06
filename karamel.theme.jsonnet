@@ -1,17 +1,19 @@
 {
 	color: {
-		primary: 'green',
-		secondary: '#FFFFFF',
-		tertiary: '#000000',
-		theme: {
-			default: {
-				text: 'red',
-				background: 'red',
-				heading: '#FFFFFF',
-				link: '#D92020',
-				code: 'pink',
-				border: '#F0F0F0'
-			}
-		}
+		primary: 'green'
 	},
+	size: {
+		font: [
+			'0.75rem',
+			'0.875rem',
+			'1rem',
+			'1.125rem',
+			'1.25rem',
+			'1.5rem',
+			'1.875rem',
+			'2.25rem',
+			'3rem',
+			'4rem'
+		]
+	}
 }

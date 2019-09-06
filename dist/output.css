@@ -720,40 +720,40 @@
 	--pl: unset;
 }
 .f-0 {
-	font-size: 16px
+	font-size: 0.75rem
 }
 .f-1 {
-	font-size: 18px
+	font-size: 0.875rem
 }
 .f-2 {
-	font-size: 21px
+	font-size: 1rem
 }
 .f-3 {
-	font-size: 23px
+	font-size: 1.125rem
 }
 .f-4 {
-	font-size: 26px
+	font-size: 1.25rem
 }
 .f-5 {
-	font-size: 29px
+	font-size: 1.5rem
 }
 .f-6 {
-	font-size: 33px
+	font-size: 1.875rem
 }
 .f-7 {
-	font-size: 37px
+	font-size: 2.25rem
 }
 .f-8 {
-	font-size: 42px
+	font-size: 3rem
 }
 .f-9 {
-	font-size: 47px
+	font-size: 4rem
 }
 .f-10 {
 	font-size: 52px
 }
 .f-primary {
-	color: red;
+	color: green;
 }
 .f-secondary {
 	color: #FFFFFF;
@@ -845,7 +845,11 @@ body {
 	/* margin: 7sp 4sp; */
 }
 body {
-	font-size: 23px;
+	font-size: 1.125rem;
+}
+body {
+	font-family: arial;
+	line-height: 1.4;
 }
 body {
 	--background-color: #FFFFFF;
@@ -877,37 +881,37 @@ h1,h2,h3,h4,h5,h6 {
 	line-height: 1.4;
 }
 h1 {
-	font-size: 42px;
+	font-size: 3rem;
 }
 h1 {
 	color: var(--heading-color);
 }
 h2 {
-	font-size: 37px;
+	font-size: 2.25rem;
 }
 h2 {
 	color: var(--heading-color);
 }
 h3 {
-	font-size: 33px;
+	font-size: 1.875rem;
 }
 h3 {
 	color: var(--heading-color);
 }
 h4 {
-	font-size: 29px;
+	font-size: 1.5rem;
 }
 h4 {
 	color: var(--heading-color);
 }
 h5 {
-	font-size: 26px;
+	font-size: 1.25rem;
 }
 h5 {
 	color: var(--heading-color);
 }
 h6 {
-	font-size: 23px;
+	font-size: 1.125rem;
 }
 h6 {
 	color: var(--heading-color);

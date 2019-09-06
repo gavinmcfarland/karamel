@@ -78,16 +78,21 @@ _mole["default"].add.apply(_mole["default"], _toConsumableArray(_fontColor["defa
 _mole["default"].add.apply(_mole["default"], _toConsumableArray(_zIndex["default"]));
 
 _mole["default"].build(); // Need an option to avoid build and just output string to pass straight to postcss
-// fs.readFile('dist/main.css', (err, css) => {
-// 	postcss([atImport, customSelectors, extend])
-// 		.process(css, { from: 'dist/main.css', to: 'dist/output.css' })
-// 		.then(result => {
-// 			fs.writeFile('dist/output.css', result.css, () => true)
-// 			if (result.map) {
-// 				fs.writeFile('dist/output.css.map', result.map, () => true)
-// 			}
-// 		})
-// })
 
 
-console.log(_mole["default"].debug);
+_fs["default"].readFile('dist/main.css', function (err, css) {
+  (0, _postcss["default"])([_postcssImport["default"], _postcssCustomSelectors["default"], _postcssExtendRule["default"]]).process(css, {
+    from: 'dist/main.css',
+    to: 'dist/output.css'
+  }).then(function (result) {
+    _fs["default"].writeFile('dist/output.css', result.css, function () {
+      return true;
+    });
+
+    if (result.map) {
+      _fs["default"].writeFile('dist/output.css.map', result.map, function () {
+        return true;
+      });
+    }
+  });
+}); // console.log(mole.debug)

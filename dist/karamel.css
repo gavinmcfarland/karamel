@@ -722,34 +722,34 @@
 	--pl: unset;
 }
 .f-0 {
-	font-size: 16px
+	font-size: 0.75rem
 }
 .f-1 {
-	font-size: 18px
+	font-size: 0.875rem
 }
 .f-2 {
-	font-size: 21px
+	font-size: 1rem
 }
 .f-3 {
-	font-size: 23px
+	font-size: 1.125rem
 }
 .f-4 {
-	font-size: 26px
+	font-size: 1.25rem
 }
 .f-5 {
-	font-size: 29px
+	font-size: 1.5rem
 }
 .f-6 {
-	font-size: 33px
+	font-size: 1.875rem
 }
 .f-7 {
-	font-size: 37px
+	font-size: 2.25rem
 }
 .f-8 {
-	font-size: 42px
+	font-size: 3rem
 }
 .f-9 {
-	font-size: 47px
+	font-size: 4rem
 }
 .f-10 {
 	font-size: 52px
@@ -800,12 +800,26 @@
 	line-height: 1.4;
 }
 
-.c {
-	--background-color: red;
+.c-dark {
+	--background-color: #000000;
 	--border-color: #F0F0F0;
 	--heading-color: #FFFFFF;
 	--link-color: #D92020;
-	--color: red;
+	--color: #F0F0F0;
+}
+.c {
+	--background-color: #FFFFFF;
+	--border-color: #F0F0F0;
+	--heading-color: #000000;
+	--link-color: #D92020;
+	--color: #000000;
+}
+.c-light {
+	--background-color: #FFFFFF;
+	--border-color: #F0F0F0;
+	--heading-color: #000000;
+	--link-color: #D92020;
+	--color: #000000;
 }
 .c {
 	color: var(--color);

@@ -4,7 +4,7 @@ html {
 
 body {
 	/* margin: 7sp 4sp; */
-	@extend .f-3, .c;
+	@extend .f-3, .c, .f-text;
 }
 
 :--heading,
