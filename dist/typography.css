@@ -4,7 +4,7 @@ html {
 
 body {
 	/* margin: 7sp 4sp; */
-	@extend .f-3, .c, .f-text;
+	@extend .f-2, .c, .f-text;
 }
 
 :--heading,
@@ -17,32 +17,32 @@ body {
 }
 
 h1 {
-	@extend .f-8;
-	color: var(--heading-color);
-}
-
-h2 {
 	@extend .f-7;
 	color: var(--heading-color);
 }
 
-h3 {
+h2 {
 	@extend .f-6;
 	color: var(--heading-color);
 }
 
-h4 {
+h3 {
 	@extend .f-5;
 	color: var(--heading-color);
 }
 
-h5 {
+h4 {
 	@extend .f-4;
 	color: var(--heading-color);
 }
 
+h5 {
+	@extend .f-3;
+	color: var(--heading-color);
+}
+
 h6 {
-	@extend .f-3, .f-bold;
+	@extend .f-2, .f-bold;
 	color: var(--heading-color);
 }
 
@@ -77,13 +77,16 @@ pre {
 }
 
 :--code-inline {
-	/* @extend %c-contrast %p-1 %rounded-sm; */
+	/* Move to framework? */
+	background-color: var(--background-color);
+	@extend .c-contrast, .p-1;
 }
 
 :--code-block {
-	/* padding: 2sp; */
 	display: block;
-	/* @extend %c-contrast %p-4 %rounded-sm; */
+	/* Move to framework? */
+	background-color: var(--background-color);
+	@extend .c-contrast, .p-4;
 }
 
 table {

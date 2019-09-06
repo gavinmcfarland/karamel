@@ -800,6 +800,13 @@
 	line-height: 1.4;
 }
 
+.c-contrast {
+	--background-color: #F0F0F0;
+	--border-color: #F0F0F0;
+	--heading-color: #000000;
+	--link-color: #D92020;
+	--color: #000000;
+}
 .c-dark {
 	--background-color: #000000;
 	--border-color: #F0F0F0;

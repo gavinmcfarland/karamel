@@ -69,7 +69,15 @@ local sides = {
 				link: '#D92020',
 				code: 'pink',
 				border: '#F0F0F0'
-			}
+			},
+			contrast: {
+				text: '#000000',
+				background: '#F0F0F0',
+				heading: '#000000',
+				link: '#D92020',
+				code: '#4F148F',
+				border: '#F0F0F0'
+			},
 		}
 	},
 	font: {
