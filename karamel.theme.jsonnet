@@ -1,6 +1,6 @@
 {
 	color: {
-		primary: 'red',
+		primary: 'green',
 		secondary: '#FFFFFF',
 		tertiary: '#000000',
 		theme: {

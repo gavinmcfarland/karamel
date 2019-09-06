@@ -1,4 +1,11 @@
 import mole from 'mole'
+import fs from 'fs'
+import postcss from 'postcss'
+import atImport from 'postcss-import'
+import customSelectors from 'postcss-custom-selectors'
+import extend from 'postcss-extend-rule'
+import autoprefixer from 'autoprefixer'
+import precss from 'precss'
 
 import width from './parts/width'
 import maxWidth from './parts/max-width'
@@ -14,23 +21,7 @@ import zIndex from './parts/z-index';
 
 // import parts from './models/parts';
 mole.config('src/mole.config.js')
-// mole.theme({
-// 	color: {
-// 		primary: 'red',
-// 		secondary: '#FFFFFF',
-// 		tertiary: '#000000',
-// 		theme: {
-// 			default: {
-// 				text: 'red',
-// 				background: 'red',
-// 				heading: '#FFFFFF',
-// 				link: '#D92020',
-// 				code: 'pink',
-// 				border: '#F0F0F0'
-// 			}
-// 		}
-// 	},
-// })
+mole.theme('karamel.theme.jsonnet')
 // mole.add(...width)
 // mole.add(...parts)
 mole.add(...margin)
@@ -45,17 +36,19 @@ mole.add(...height)
 mole.add(...fontColor)
 mole.add(...zIndex)
 
-// fs.readFile('src/app.css', (err, css) => {
-// 	postcss([precss, autoprefixer])
-// 		.process(css, { from: 'src/app.css', to: 'dest/app.css' })
+mole.build()
+
+// Need an option to avoid build and just output string to pass straight to postcss
+
+// fs.readFile('dist/main.css', (err, css) => {
+// 	postcss([atImport, customSelectors, extend])
+// 		.process(css, { from: 'dist/main.css', to: 'dist/output.css' })
 // 		.then(result => {
-// 			fs.writeFile('dest/app.css', result.css, () => true)
+// 			fs.writeFile('dist/output.css', result.css, () => true)
 // 			if (result.map) {
-// 				fs.writeFile('dest/app.css.map', result.map, () => true)
+// 				fs.writeFile('dist/output.css.map', result.map, () => true)
 // 			}
 // 		})
 // })
 
-mole.build()
-
-// mole.build()
+console.log(mole.debug)

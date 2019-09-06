@@ -2,6 +2,20 @@
 
 var _mole = _interopRequireDefault(require("mole"));
 
+var _fs = _interopRequireDefault(require("fs"));
+
+var _postcss = _interopRequireDefault(require("postcss"));
+
+var _postcssImport = _interopRequireDefault(require("postcss-import"));
+
+var _postcssCustomSelectors = _interopRequireDefault(require("postcss-custom-selectors"));
+
+var _postcssExtendRule = _interopRequireDefault(require("postcss-extend-rule"));
+
+var _autoprefixer = _interopRequireDefault(require("autoprefixer"));
+
+var _precss = _interopRequireDefault(require("precss"));
+
 var _width = _interopRequireDefault(require("./parts/width"));
 
 var _maxWidth = _interopRequireDefault(require("./parts/max-width"));
@@ -35,24 +49,9 @@ function _iterableToArray(iter) { if (Symbol.iterator in Object(iter) || Object.
 function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) { for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) { arr2[i] = arr[i]; } return arr2; } }
 
 // import parts from './models/parts';
-_mole["default"].config('src/mole.config.js'); // mole.theme({
-// 	color: {
-// 		primary: 'red',
-// 		secondary: '#FFFFFF',
-// 		tertiary: '#000000',
-// 		theme: {
-// 			default: {
-// 				text: 'red',
-// 				background: 'red',
-// 				heading: '#FFFFFF',
-// 				link: '#D92020',
-// 				code: 'pink',
-// 				border: '#F0F0F0'
-// 			}
-// 		}
-// 	},
-// })
-// mole.add(...width)
+_mole["default"].config('src/mole.config.js');
+
+_mole["default"].theme('karamel.theme.jsonnet'); // mole.add(...width)
 // mole.add(...parts)
 
 
@@ -76,16 +75,19 @@ _mole["default"].add.apply(_mole["default"], _toConsumableArray(_height["default
 
 _mole["default"].add.apply(_mole["default"], _toConsumableArray(_fontColor["default"]));
 
-_mole["default"].add.apply(_mole["default"], _toConsumableArray(_zIndex["default"])); // fs.readFile('src/app.css', (err, css) => {
-// 	postcss([precss, autoprefixer])
-// 		.process(css, { from: 'src/app.css', to: 'dest/app.css' })
+_mole["default"].add.apply(_mole["default"], _toConsumableArray(_zIndex["default"]));
+
+_mole["default"].build(); // Need an option to avoid build and just output string to pass straight to postcss
+// fs.readFile('dist/main.css', (err, css) => {
+// 	postcss([atImport, customSelectors, extend])
+// 		.process(css, { from: 'dist/main.css', to: 'dist/output.css' })
 // 		.then(result => {
-// 			fs.writeFile('dest/app.css', result.css, () => true)
+// 			fs.writeFile('dist/output.css', result.css, () => true)
 // 			if (result.map) {
-// 				fs.writeFile('dest/app.css.map', result.map, () => true)
+// 				fs.writeFile('dist/output.css.map', result.map, () => true)
 // 			}
 // 		})
 // })
 
 
-_mole["default"].build(); // mole.build()
+console.log(_mole["default"].debug);

@@ -39,7 +39,7 @@ local sides = {
 	},
 	size: {
 		font: [
-			std.ceil(16 * std.pow($.number['golden ratio'], n)) + 'px'
+			std.ceil(16 * std.pow($.number['major second'], n)) + 'px'
 			for n in std.range(0, 10)
 		],
 		spacing: [
@@ -90,7 +90,8 @@ local sides = {
 				'font weight': '600'
 			},
 			code: self.text + {
-				'font size': '0.9em'
+				'font size': '0.9em',
+				'font family': 'Menlo'
 			},
 		}
 	},

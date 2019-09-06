@@ -43,7 +43,13 @@
 		]
 	},
 	"devDependencies": {
-		"mole": "^1.0.0-alpha.4",
-		"phtml-utility-class": "^1.1.4"
+		"autoprefixer": "^9.6.1",
+		"mole": "git+https://github.com/limitlessloop/mole.git",
+		"phtml-utility-class": "^1.1.4",
+		"postcss": "^7.0.18",
+		"postcss-custom-selectors": "^5.1.2",
+		"postcss-extend-rule": "^3.0.0",
+		"postcss-import": "^12.0.1",
+		"precss": "^4.0.0"
 	}
 }
