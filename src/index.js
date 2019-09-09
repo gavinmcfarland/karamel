@@ -53,6 +53,6 @@ export function buildPostCSS(input, output) {
 	})
 }
 
-buildPostCSS('dist/main.css', 'dist/output.css')
+buildPostCSS('dist/main.css', 'dist/karamel.css')
 
 // console.log(mole.debug)

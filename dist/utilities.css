@@ -41,6 +41,7 @@
 .h-3 {
 	height: 1200px
 }
+
 .m-1 {
 	margin: 2px
 }
@@ -392,6 +393,7 @@
 .max-w-3 {
 	max-width: 1200px
 }
+
 .p-1 {
 	padding: 2px
 }
@@ -720,40 +722,41 @@
 	--pl: unset;
 }
 .f-0 {
-	font-size: 16px
+	font-size: 0.75rem
 }
 .f-1 {
-	font-size: 18px
+	font-size: 0.875rem
 }
 .f-2 {
-	font-size: 21px
+	font-size: 1rem
 }
 .f-3 {
-	font-size: 23px
+	font-size: 1.125rem
 }
 .f-4 {
-	font-size: 26px
+	font-size: 1.25rem
 }
 .f-5 {
-	font-size: 29px
+	font-size: 1.5rem
 }
 .f-6 {
-	font-size: 33px
+	font-size: 1.875rem
 }
 .f-7 {
-	font-size: 37px
+	font-size: 2.25rem
 }
 .f-8 {
-	font-size: 42px
+	font-size: 3rem
 }
 .f-9 {
-	font-size: 47px
+	font-size: 4rem
 }
 .f-10 {
 	font-size: 52px
 }
+
 .f-primary {
-	color: red;
+	color: green;
 }
 .f-secondary {
 	color: #FFFFFF;
@@ -761,6 +764,7 @@
 .f-tertiary {
 	color: #000000;
 }
+
 .flex-open {
 	display: flex;
 	flex-wrap: wrap;
@@ -795,6 +799,7 @@
 	font-family: arial;
 	line-height: 1.4;
 }
+
 .c-contrast {
 	--background-color: #F0F0F0;
 	--border-color: #F0F0F0;
@@ -844,149 +849,4 @@
 }
 .z-50 {
 	z-index: 50
-}
-html {
-	/* font-size: 62.5%; */
-}
-body {
-	/* margin: 7sp 4sp; */
-}
-body {
-	font-size: 21px;
-}
-body {
-	font-family: arial;
-	line-height: 1.4;
-}
-body {
-	--background-color: #FFFFFF;
-	--border-color: #F0F0F0;
-	--heading-color: #000000;
-	--link-color: #D92020;
-	--color: #000000;
-}
-body {
-	color: var(--color);
-	background-color: var(--background-color);
-}
-h1,h2,h3,h4,h5,h6,
-p,
-ul,
-ol,
-blockquote,
-:not(p)
-:not(li)
-:not(td)
->
-code {}
-h1,h2,h3,h4,h5,h6 {
-	/* @extend %my-4; */
-}
-h1,h2,h3,h4,h5,h6 {
-	font-family: arial;
-	font-weight: 500;
-	line-height: 1.4;
-}
-h1 {
-	font-size: 37px;
-}
-h1 {
-	color: var(--heading-color);
-}
-h2 {
-	font-size: 33px;
-}
-h2 {
-	color: var(--heading-color);
-}
-h3 {
-	font-size: 29px;
-}
-h3 {
-	color: var(--heading-color);
-}
-h4 {
-	font-size: 26px;
-}
-h4 {
-	color: var(--heading-color);
-}
-h5 {
-	font-size: 23px;
-}
-h5 {
-	color: var(--heading-color);
-}
-h6 {
-	font-size: 21px;
-}
-h6 {
-	color: var(--heading-color);
-}
-p,ul,ol,blockquote {
-	/* @extend %my-6; */
-}
-a {
-	cursor: pointer;
-	color: var(--link-color);
-}
-small {
-}
-caps {
-	font-family: arial;
-	font-weight: 600;
-	letter-spacing: 0.23em;
-	line-height: 1.4;
-	text-transform: uppercase;
-}
-blockquote,
-q {
-}
-code {
-	font-family: Menlo;
-	font-size: 0.9em;
-	line-height: 1.4;
-}
-pre {
-	background-color: inherit;
-}
-p>code,li>code,td>code {
-	/* Move to framework? */
-	background-color: var(--background-color);
-}
-p>code,li>code,td>code {
-	padding: 2px;
-}
-p>code,li>code,td>code {
-	--background-color: #F0F0F0;
-	--border-color: #F0F0F0;
-	--heading-color: #000000;
-	--link-color: #D92020;
-	--color: #000000;
-}
-:not(p):not(li):not(td)>code {
-	display: block;
-	/* Move to framework? */
-	background-color: var(--background-color);
-}
-:not(p):not(li):not(td)>code {
-	padding: 6px;
-}
-:not(p):not(li):not(td)>code {
-	--background-color: #F0F0F0;
-	--border-color: #F0F0F0;
-	--heading-color: #000000;
-	--link-color: #D92020;
-	--color: #000000;
-}
-table {
-	/* @extend %my-6; */
-	/* @extend %b-t %b-b %b-gray-200; */
-}
-td,
-th {
-	/* @extend %py-1; */
-}
-tr {
-	/* @extend %b-t %b-b %border-gray-200; */
 }

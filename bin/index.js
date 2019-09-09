@@ -104,4 +104,4 @@ function buildPostCSS(input, output) {
   });
 }
 
-buildPostCSS('dist/main.css', 'dist/output.css'); // console.log(mole.debug)
+buildPostCSS('dist/main.css', 'dist/karamel.css'); // console.log(mole.debug)
