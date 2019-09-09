@@ -1,6 +1,6 @@
 export default ['template', 'font-size', (theme) => {
 	let name = 'font-size'
-	console.log(name)
+
 	let abbr = theme.property.fontSize.abbr
 
 	let o = theme.size.font

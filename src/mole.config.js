@@ -11,7 +11,8 @@ module.exports = {
 		'flex',
 		'font-style',
 		'color-theme',
-		'z-index'
+		'z-index',
+		'border-color'
 	],
 	output: { file: 'styles/utilities.css' }
 }

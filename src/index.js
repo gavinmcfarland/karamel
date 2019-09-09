@@ -10,6 +10,7 @@ import precss from 'precss'
 import width from './parts/width'
 import maxWidth from './parts/max-width'
 import margin from './parts/margin'
+import border from './parts/border'
 import colorTheme from './parts/color-theme'
 import padding from './parts/padding'
 import fontStyle from './parts/font-style';
@@ -18,6 +19,7 @@ import fontSize from './parts/font-size';
 import height from './parts/height';
 import fontColor from './parts/font-color';
 import zIndex from './parts/z-index';
+import borderColor from './parts/border-color'
 
 // import parts from './models/parts';
 mole.config('src/mole.config.js')
@@ -25,6 +27,8 @@ mole.theme('karamel.theme.jsonnet')
 // mole.add(...width)
 // mole.add(...parts)
 mole.add(...margin)
+mole.add(...border)
+mole.add(...borderColor)
 mole.add(...padding)
 mole.add(...width)
 mole.add(...maxWidth)
@@ -36,7 +40,7 @@ mole.add(...height)
 mole.add(...fontColor)
 mole.add(...zIndex)
 
-// mole.build()
+mole.build()
 
 // Need an option to avoid build and just output string to pass straight to postcss
 

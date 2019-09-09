@@ -6,7 +6,6 @@ Object.defineProperty(exports, "__esModule", {
 exports["default"] = void 0;
 var _default = ['template', 'font-size', function (theme) {
   var name = 'font-size';
-  console.log(name);
   var abbr = theme.property.fontSize.abbr;
   var o = theme.size.font;
   var string = '';

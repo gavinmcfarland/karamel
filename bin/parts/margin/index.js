@@ -5,7 +5,6 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports["default"] = void 0;
 var _default = ['template', 'margin', function (theme) {
-  console.log(theme);
   var name = 'margin';
   var abbr = theme.property.margin.abbr;
   var o = theme.size.spacing;

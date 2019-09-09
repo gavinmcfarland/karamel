@@ -27,6 +27,8 @@ var _maxWidth = _interopRequireDefault(require("./parts/max-width"));
 
 var _margin = _interopRequireDefault(require("./parts/margin"));
 
+var _border = _interopRequireDefault(require("./parts/border"));
+
 var _colorTheme = _interopRequireDefault(require("./parts/color-theme"));
 
 var _padding = _interopRequireDefault(require("./parts/padding"));
@@ -42,6 +44,8 @@ var _height = _interopRequireDefault(require("./parts/height"));
 var _fontColor = _interopRequireDefault(require("./parts/font-color"));
 
 var _zIndex = _interopRequireDefault(require("./parts/z-index"));
+
+var _borderColor = _interopRequireDefault(require("./parts/border-color"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -62,6 +66,10 @@ _mole["default"].theme('karamel.theme.jsonnet'); // mole.add(...width)
 
 _mole["default"].add.apply(_mole["default"], _toConsumableArray(_margin["default"]));
 
+_mole["default"].add.apply(_mole["default"], _toConsumableArray(_border["default"]));
+
+_mole["default"].add.apply(_mole["default"], _toConsumableArray(_borderColor["default"]));
+
 _mole["default"].add.apply(_mole["default"], _toConsumableArray(_padding["default"]));
 
 _mole["default"].add.apply(_mole["default"], _toConsumableArray(_width["default"]));
@@ -80,8 +88,9 @@ _mole["default"].add.apply(_mole["default"], _toConsumableArray(_height["default
 
 _mole["default"].add.apply(_mole["default"], _toConsumableArray(_fontColor["default"]));
 
-_mole["default"].add.apply(_mole["default"], _toConsumableArray(_zIndex["default"])); // mole.build()
-// Need an option to avoid build and just output string to pass straight to postcss
+_mole["default"].add.apply(_mole["default"], _toConsumableArray(_zIndex["default"]));
+
+_mole["default"].build(); // Need an option to avoid build and just output string to pass straight to postcss
 
 
 function buildPostCSS(input, output) {

@@ -46,7 +46,13 @@ local sides = {
 			std.ceil(2 * std.pow($.number['octave'], n / 2)) + 'px'
 			for n in std.range(0, 20)
 		],
-		width: ['300px', '600px', '1200px']
+		width: ['300px', '600px', '1200px'],
+		lines: [
+			'1px',
+			'2px',
+			'4px',
+			'8px'
+		],
 	},
 	color: {
 		primary: 'red',
@@ -151,31 +157,67 @@ local sides = {
 		},
 		border: {
 			[key]: sides[key] + {
-				width: {},
-				style: {},
-				color: {},
-				radius: {}
+				width: {
+					abbr: 'w'
+				},
+				style: {
+					abbr: 's'
+				},
+				color: {
+					abbr: 'c'
+				},
+				radius: {
+					abbr: 'ra'
+				}
 			} + if key == 'bottom' || key == 'top' then {
 				left: sides['left'] + {
-					radius: {}
+					radius: {
+						abbr: 'ra'
+					}
 				},
 				right: sides['right'] + {
-					radius: {}
+					radius: {
+						abbr: 'ra'
+					}
 				}
 			} else {}
 			for key in std.objectFields(sides)
 		} + {
-			collapse: {},
-			color: {},
-			radius: {},
+			collapse: {
+				abbr: 'c'
+			},
+			color: {
+				abbr: 'c'
+			},
+			radius: {
+				abbr: 'ra'
+			},
+			width: {
+				abbr: 'w'
+			},
 			image: {
-				outset: {},
-				repeat: {},
-				slice: {},
-				source: {},
-				width: {},
-				spacing: {},
-				style: {}
+				outset: {
+					abbr: 'o'
+				},
+				repeat: {
+					abbr: 'r'
+				},
+				slice: {
+					abbr: 's'
+				},
+				source: {
+					abbr: 's'
+				},
+				width: {
+					abbr: 'w'
+				},
+				spacing: {
+					abbr: 's'
+				},
+				style: {
+					abbr: 's'
+				},
+				abbr: 'i'
 			},
 			abbr: 'b'
 		},

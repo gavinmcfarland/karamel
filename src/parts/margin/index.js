@@ -1,6 +1,5 @@
 export default ['template', 'margin', (theme) => {
 
-	console.log(theme)
 	let name = 'margin'
 	let abbr = theme.property.margin.abbr
 
