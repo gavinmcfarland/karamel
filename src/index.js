@@ -36,7 +36,7 @@ mole.add(...height)
 mole.add(...fontColor)
 mole.add(...zIndex)
 
-mole.build()
+// mole.build()
 
 // Need an option to avoid build and just output string to pass straight to postcss
 
@@ -53,6 +53,6 @@ export function buildPostCSS(input, output) {
 	})
 }
 
-buildPostCSS('dist/main.css', 'dist/karamel.css')
+buildPostCSS('./src/styles/main.css', './dist/karamel.css')
 
 // console.log(mole.debug)

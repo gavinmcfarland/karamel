@@ -1,0 +1,105 @@
+/* Sets the typography baseline */
+
+html {
+	/* font-size: 62.5%; */
+}
+
+body {
+	@extend .f-2, .c, .f-text, .mt-7, .mb-7, .ml-4, .mr-4;
+}
+
+:--heading,
+:--text-block,
+:--code-block {}
+
+:--heading {
+	@extend .f-heading, .mt-4, .mb-4;
+}
+
+h1 {
+	@extend .f-7;
+	color: var(--heading-color);
+}
+
+h2 {
+	@extend .f-6;
+	color: var(--heading-color);
+}
+
+h3 {
+	@extend .f-5;
+	color: var(--heading-color);
+}
+
+h4 {
+	@extend .f-4;
+	color: var(--heading-color);
+}
+
+h5 {
+	@extend .f-3;
+	color: var(--heading-color);
+}
+
+h6 {
+	@extend .f-2, .f-bold;
+	color: var(--heading-color);
+}
+
+:--text-block {
+	@extend .mt-6, .mb-6;
+}
+
+a {
+	cursor: pointer;
+	color: var(--link-color);
+}
+
+small {
+	@extend .f-legal;
+}
+
+caps {
+	@extend .f-caps;
+}
+
+blockquote,
+q {
+	@extend .f-quote;
+}
+
+code {
+	@extend .f-code;
+}
+
+pre {
+	background-color: inherit;
+}
+
+:--code-inline {
+	/* Move to framework? */
+	background-color: var(--background-color);
+	@extend .c-contrast, .p-1;
+	display: inline-block;
+}
+
+:--code-block {
+	display: block;
+	/* Move to framework? */
+	background-color: var(--background-color);
+	@extend .c-contrast, .p-4;
+}
+
+table {
+	@extend .mt-6, .mb-6;
+	/* @extend %b-t %b-b %b-gray-200; */
+}
+
+td,
+th {
+	@extend .pt-1, pb-1;
+}
+
+tr {
+	/* @extend %b-t %b-b %border-gray-200; */
+}

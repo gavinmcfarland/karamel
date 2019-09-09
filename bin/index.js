@@ -80,9 +80,8 @@ _mole["default"].add.apply(_mole["default"], _toConsumableArray(_height["default
 
 _mole["default"].add.apply(_mole["default"], _toConsumableArray(_fontColor["default"]));
 
-_mole["default"].add.apply(_mole["default"], _toConsumableArray(_zIndex["default"]));
-
-_mole["default"].build(); // Need an option to avoid build and just output string to pass straight to postcss
+_mole["default"].add.apply(_mole["default"], _toConsumableArray(_zIndex["default"])); // mole.build()
+// Need an option to avoid build and just output string to pass straight to postcss
 
 
 function buildPostCSS(input, output) {
@@ -104,4 +103,4 @@ function buildPostCSS(input, output) {
   });
 }
 
-buildPostCSS('dist/main.css', 'dist/karamel.css'); // console.log(mole.debug)
+buildPostCSS('./src/styles/main.css', './dist/karamel.css'); // console.log(mole.debug)

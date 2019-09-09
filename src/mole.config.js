@@ -13,5 +13,5 @@ module.exports = {
 		'color-theme',
 		'z-index'
 	],
-	output: { file: '../dist/utilities.css' }
+	output: { file: 'styles/utilities.css' }
 }

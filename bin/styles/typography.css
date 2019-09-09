@@ -1,10 +1,11 @@
+/* Sets the typography baseline */
+
 html {
 	/* font-size: 62.5%; */
 }
 
 body {
-	/* margin: 7sp 4sp; */
-	@extend .f-2, .c, .f-text;
+	@extend .f-2, .c, .f-text, .mt-7, .mb-7, .ml-4, .mr-4;
 }
 
 :--heading,
@@ -12,8 +13,7 @@ body {
 :--code-block {}
 
 :--heading {
-	/* @extend %my-4; */
-	@extend .f-heading;
+	@extend .f-heading, .mt-4, .mb-4;
 }
 
 h1 {
@@ -47,7 +47,7 @@ h6 {
 }
 
 :--text-block {
-	/* @extend %my-6; */
+	@extend .mt-6, .mb-6;
 }
 
 a {
@@ -80,6 +80,7 @@ pre {
 	/* Move to framework? */
 	background-color: var(--background-color);
 	@extend .c-contrast, .p-1;
+	display: inline-block;
 }
 
 :--code-block {
@@ -90,13 +91,13 @@ pre {
 }
 
 table {
-	/* @extend %my-6; */
+	@extend .mt-6, .mb-6;
 	/* @extend %b-t %b-b %b-gray-200; */
 }
 
 td,
 th {
-	/* @extend %py-1; */
+	@extend .pt-1, pb-1;
 }
 
 tr {
