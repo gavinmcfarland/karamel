@@ -9,7 +9,7 @@
 	},
 	"style": "dist/karamel.css",
 	"scripts": {
-		"build": "babel src -d bin --copy-files && node bin/index.js"
+		"build": "babel src -d dist/app --copy-files && node dist/app/index.js"
 	},
 	"unpkg": "dist/karamel.css",
 	"repository": {
