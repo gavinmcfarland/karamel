@@ -12,7 +12,8 @@ module.exports = {
 		'font-style',
 		'color-theme',
 		'z-index',
-		'border-color'
+		'border-color',
+		'color'
 	],
 	output: { file: 'styles/utilities.css' }
 }

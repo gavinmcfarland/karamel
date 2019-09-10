@@ -20,6 +20,7 @@ import height from './parts/height';
 import fontColor from './parts/font-color';
 import zIndex from './parts/z-index';
 import borderColor from './parts/border-color'
+import color from './parts/color'
 
 // import parts from './models/parts';
 mole.config('src/mole.config.js')
@@ -28,6 +29,7 @@ mole.theme('karamel.theme.jsonnet')
 // mole.add(...parts)
 mole.add(...margin)
 mole.add(...border)
+mole.add(...color)
 mole.add(...borderColor)
 mole.add(...padding)
 mole.add(...width)

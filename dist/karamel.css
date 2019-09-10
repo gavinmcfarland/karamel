@@ -1519,6 +1519,18 @@ xmp {
 	z-index: 50
 }
 
+.primary {
+	color: green;
+}
+
+.secondary {
+	color: #FFFFFF;
+}
+
+.tertiary {
+	color: #000000;
+}
+
 /* Styles created manually until I can work into plugin */
 
 /*

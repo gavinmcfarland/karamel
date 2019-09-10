@@ -850,3 +850,13 @@
 .z-50 {
 	z-index: 50
 }
+
+.primary {
+	color: green;
+}
+.secondary {
+	color: #FFFFFF;
+}
+.tertiary {
+	color: #000000;
+}

@@ -1,3 +1,111 @@
+/* Theme */
+
+color
+color.theme
+
+size.spacing
+size.font
+size.lines
+size.widths
+
+font
+font.style
+
+/* Classes */
+
+
+/* Color */
+
+.<color> {}
+
+.color {}
+.color-<theme> {}
+
+
+/* Background */
+
+.background-<color> {}
+.background-<position> {}
+
+
+/* Border */
+
+.border-0 / .no-border
+
+.border
+.border-<side> {}
+.border-<width> {}
+.border-<color> {}
+
+.border-solid {}
+.border-dotted {}
+.border-dashed {}
+
+.border-<side>-<width> {}
+.border-<side>-<color> {}
+.border-<side>-<style> {}
+
+
+/* Width */
+
+.width-none / .width-unset / .width-0
+.width-[]
+.width-viewport
+.width-content
+
+/* Height */
+
+.height-none / .height-unset / .height-0
+.height-[]
+
+/* Size */
+
+.size-[]
+
+/* Fonts */
+
+.font
+.font-size-<size>
+.font-weight-<weight>
+.font-style-<style>
+.font-style-<element>
+.font-family-<family>
+
+
+/* Line height */
+
+.line-height:[] | .lh
+.letter-spacing:[] | .ls
+
+.flex:[] | .fl
+
+.z-index:[] | .z
+
+.box-shadow:[] | .bxsh
+
+.text-shadow:[] | .tsh
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* dynamic */
 
 .f-<integer:1-10> {}

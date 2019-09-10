@@ -47,6 +47,8 @@ var _zIndex = _interopRequireDefault(require("./parts/z-index"));
 
 var _borderColor = _interopRequireDefault(require("./parts/border-color"));
 
+var _color = _interopRequireDefault(require("./parts/color"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _nonIterableSpread(); }
@@ -67,6 +69,8 @@ _mole["default"].theme('karamel.theme.jsonnet'); // mole.add(...width)
 _mole["default"].add.apply(_mole["default"], _toConsumableArray(_margin["default"]));
 
 _mole["default"].add.apply(_mole["default"], _toConsumableArray(_border["default"]));
+
+_mole["default"].add.apply(_mole["default"], _toConsumableArray(_color["default"]));
 
 _mole["default"].add.apply(_mole["default"], _toConsumableArray(_borderColor["default"]));
 
