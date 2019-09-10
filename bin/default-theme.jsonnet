@@ -37,13 +37,46 @@ local sides = {
 		'major twelfth'	: 3,
 		'double octave'	: 4
 	},
+	color: {
+		navy: '#001F3F',
+		blue: '#0074D9',
+		aqua: '#7FDBFF',
+		teal: '#39CCCC',
+		olive: '#3D9970',
+		green: '#2ECC40',
+		lime: '#01FF70',
+		yellow: '#FFDC00',
+		orange: '#FF851B',
+		red: '#FF4136',
+		fuchsia: '#F012BE',
+		purple: '#B10DC9',
+		maroon: '#85144B',
+		white: '#FFFFFF',
+		silver: '#DDDDDD',
+		gray: '#AAAAAA',
+		black: '#111111',
+		theme: {
+			default: self.light,
+			light: {
+				text: $.color.black,
+				background: $.color.white,
+				heading: $.color.black,
+				link: $.color.green,
+				code: $.color.black,
+				border: $.color.lime
+			},
+			contrast: self.light + {
+				background: $.color.silver,
+			},
+		}
+	},
 	size: {
 		font: [
 			std.ceil(16 * std.pow($.number['major second'], n)) + 'px'
 			for n in std.range(0, 10)
 		],
 		spacing: [
-			std.ceil(2 * std.pow($.number['octave'], n / 2)) + 'px'
+			std.ceil(2 * std.pow($.number['octave'], n / 2)) / 16 + 'em'
 			for n in std.range(0, 20)
 		],
 		width: ['300px', '600px', '1200px'],
@@ -53,38 +86,6 @@ local sides = {
 			'4px',
 			'8px'
 		],
-	},
-	color: {
-		primary: 'red',
-		secondary: '#FFFFFF',
-		tertiary: '#000000',
-		theme: {
-			default: self.light,
-			light: {
-				text: '#000000',
-				background: '#FFFFFF',
-				heading: '#000000',
-				link: '#D92020',
-				code: 'pink',
-				border: '#F0F0F0'
-			},
-			dark: {
-				text: '#F0F0F0',
-				background: '#000000',
-				heading: '#FFFFFF',
-				link: '#D92020',
-				code: 'pink',
-				border: '#F0F0F0'
-			},
-			contrast: {
-				text: '#000000',
-				background: '#F0F0F0',
-				heading: '#000000',
-				link: '#D92020',
-				code: '#4F148F',
-				border: '#F0F0F0'
-			},
-		}
 	},
 	font: {
 		style: {

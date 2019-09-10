@@ -37,9 +37,15 @@ font.style
 .border-<width> {}
 .border-<color> {}
 
-.border-solid {}
-.border-dotted {}
-.border-dashed {}
+.border-style-solid {
+	border-style: solid;
+}
+.border-style-dotted {
+	border-style: dotted;
+}
+.border-style-dashed {
+	border-style: dashed
+}
 
 .border-<side>-<width> {}
 .border-<side>-<color> {}

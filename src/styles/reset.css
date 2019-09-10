@@ -1,3 +1,6 @@
+* {
+	box-sizing: border-box;
+}
 ul {
 	list-style: none;
 	padding: unset;
@@ -13,10 +16,6 @@ th {
 	padding: unset;
 }
 
-body * {
-	border-color: var(--border-color);
-}
-
 html {
 	/* font-size: 62.5%; */
 }
@@ -25,4 +24,12 @@ xmp {
 	margin: unset;
 	font-family: inherit;
 	display: inline-block
+}
+
+/* Borders by default */
+
+body * {
+    border-style: solid;
+    border-width: 0;
+	border-color: var(--border-color, inherit)
 }

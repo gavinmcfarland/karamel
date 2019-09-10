@@ -36,7 +36,21 @@ export default ['template', 'padding', (theme) => {
 	--pr: unset;
 	--pb: unset;
 	--pl: unset;
+}
+.${abbr}-inherit {
+	padding: inherit;
+}
+.${abbr}t-inherit {
+	padding-top: inherit;
+}
+.${abbr}r-inherit {
+	padding-right: inherit;
+}
+.${abbr}b-inherit {
+	padding-bottom: inherit;
+}
+.${abbr}l-inherit {
+	padding-left: inherit;
 }`
-
 	return string
 }]

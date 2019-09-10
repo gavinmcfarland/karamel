@@ -30,7 +30,7 @@ var _default = ['template', 'padding', function (theme) {
     }
   }
 
-  string += ".".concat(abbr, " {\n\t").concat(name, "-top: var(--pt, unset);\n\t").concat(name, "-right: var(--pr, unset);\n\t").concat(name, "-bottom: var(--pb, unset);\n\t").concat(name, "-left: var(--pl, unset);\n}\n.").concat(abbr, " > * {\n\t--pt: unset;\n\t--pr: unset;\n\t--pb: unset;\n\t--pl: unset;\n}");
+  string += ".".concat(abbr, " {\n\t").concat(name, "-top: var(--pt, unset);\n\t").concat(name, "-right: var(--pr, unset);\n\t").concat(name, "-bottom: var(--pb, unset);\n\t").concat(name, "-left: var(--pl, unset);\n}\n.").concat(abbr, " > * {\n\t--pt: unset;\n\t--pr: unset;\n\t--pb: unset;\n\t--pl: unset;\n}\n.").concat(abbr, "-inherit {\n\tpadding: inherit;\n}\n.").concat(abbr, "t-inherit {\n\tpadding-top: inherit;\n}\n.").concat(abbr, "r-inherit {\n\tpadding-right: inherit;\n}\n.").concat(abbr, "b-inherit {\n\tpadding-bottom: inherit;\n}\n.").concat(abbr, "l-inherit {\n\tpadding-left: inherit;\n}");
   return string;
 }];
 exports["default"] = _default;

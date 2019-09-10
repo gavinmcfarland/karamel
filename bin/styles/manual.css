@@ -1,17 +1,11 @@
 /* Styles created manually until I can work into plugin */
-/*
-.b {
 
+.b-solid {
+	border-style: solid;
 }
-
-.bc {
-
+.b-dotted {
+	border-style: dotted;
 }
-
-.bs {
-
+.b-dashed {
+	border-style: dashed
 }
-
-.r {
-
-} */

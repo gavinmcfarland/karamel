@@ -5,7 +5,7 @@ html {
 }
 
 body {
-	@extend .f-2, .c, .f-text, .mt-7, .mb-7, .ml-4, .mr-4;
+	@extend .f-2, .c, .f-text;
 }
 
 :--heading,
@@ -74,6 +74,10 @@ code {
 
 pre {
 	background-color: inherit;
+}
+
+a:link {
+	color: var(--link-color)
 }
 
 :--code-inline {
