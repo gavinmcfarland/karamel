@@ -70,6 +70,7 @@ q {
 
 code {
 	@extend .f-code;
+	cursor: text;
 }
 
 pre {
@@ -91,7 +92,7 @@ a:link {
 	display: block;
 	/* Move to framework? */
 	background-color: var(--background-color);
-	@extend .c-contrast, .p-4;
+	@extend .c-contrast, .p-8;
 }
 
 table {

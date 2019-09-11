@@ -1820,6 +1820,10 @@ code {
 	line-height: 1.4;
 }
 
+code {
+	cursor: text;
+}
+
 pre {
 	background-color: inherit;
 }
@@ -1856,7 +1860,7 @@ p>code,li>code,td>code {
 }
 
 :not(p):not(li):not(td)>code {
-	padding: 0.375em;
+	padding: 1.4375em;
 }
 
 :not(p):not(li):not(td)>code {
