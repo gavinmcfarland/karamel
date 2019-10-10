@@ -14,6 +14,7 @@ import border from './parts/border'
 import colorTheme from './parts/color-theme'
 import padding from './parts/padding'
 import fontStyle from './parts/font-style';
+import fontFamily from './parts/font-family';
 import flex from './parts/flex';
 import fontSize from './parts/font-size';
 import height from './parts/height';
@@ -36,6 +37,7 @@ mole.add(...width)
 mole.add(...maxWidth)
 mole.add(...colorTheme)
 mole.add(...fontStyle)
+mole.add(...fontFamily)
 mole.add(...fontSize)
 mole.add(...flex)
 mole.add(...height)

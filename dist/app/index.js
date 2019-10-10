@@ -35,6 +35,8 @@ var _padding = _interopRequireDefault(require("./parts/padding"));
 
 var _fontStyle = _interopRequireDefault(require("./parts/font-style"));
 
+var _fontFamily = _interopRequireDefault(require("./parts/font-family"));
+
 var _flex = _interopRequireDefault(require("./parts/flex"));
 
 var _fontSize = _interopRequireDefault(require("./parts/font-size"));
@@ -83,6 +85,8 @@ _mole["default"].add.apply(_mole["default"], _toConsumableArray(_maxWidth["defau
 _mole["default"].add.apply(_mole["default"], _toConsumableArray(_colorTheme["default"]));
 
 _mole["default"].add.apply(_mole["default"], _toConsumableArray(_fontStyle["default"]));
+
+_mole["default"].add.apply(_mole["default"], _toConsumableArray(_fontFamily["default"]));
 
 _mole["default"].add.apply(_mole["default"], _toConsumableArray(_fontSize["default"]));
 

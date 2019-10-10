@@ -8,14 +8,10 @@ local sides = {
 
 {
 	asset: {
-		font: {
-			visby: {
-				src: ''
-			},
-			akkurat: {
-				src: ''
-			},
-		}
+		font: [
+			"Miriam Libre",
+			"Roboto"
+		]
 	},
 	number: {
 		'minor second'	: 1.067,
@@ -88,9 +84,14 @@ local sides = {
 		],
 	},
 	font: {
+		family: {
+			text: $.asset.font[1],
+			display: $.asset.font[0],
+			code: $.asset.font[1]
+		},
 		style: {
 			text: {
-				'font family': 'arial',
+				'font family': $.font.family.text,
 				'line height': '1.4'
 			},
 			heading: self.text + {
@@ -106,7 +107,7 @@ local sides = {
 			},
 			code: self.text + {
 				'font size': '0.9em',
-				'font family': 'Menlo'
+				'font family': $.font.family.code
 			},
 		}
 	},
@@ -133,6 +134,9 @@ local sides = {
 			abbr: 'f'
 		},
 		fontStyle: {
+			abbr: 'f'
+		},
+		fontFamily: {
 			abbr: 'f'
 		},
 		fontColor: {

@@ -17,12 +17,12 @@ body {
 }
 
 h1 {
-	@extend .f-7;
+	@extend .f-7, .mt-8, .mb-6;
 	color: var(--heading-color);
 }
 
 h2 {
-	@extend .f-6;
+	@extend .f-6, .mt-8, .mb-6;
 	color: var(--heading-color);
 }
 
@@ -50,11 +50,6 @@ h6 {
 	@extend .mt-6, .mb-6;
 }
 
-a {
-	cursor: pointer;
-	color: var(--link-color);
-}
-
 small {
 	@extend .f-legal;
 }
@@ -77,8 +72,13 @@ pre {
 	background-color: inherit;
 }
 
-a:link {
+a {
+	cursor: pointer;
 	color: var(--link-color)
+}
+
+a:hover {
+	background-color: var(--color);
 }
 
 :--code-inline {

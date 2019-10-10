@@ -834,30 +834,40 @@
 	flex-shrink: 0;
 }
 .f-caps {
-	font-family: arial;
+	font-family: Roboto;
 	font-weight: 600;
 	letter-spacing: 0.23em;
 	line-height: 1.4;
 	text-transform: uppercase;
 }
 .f-code {
-	font-family: Menlo;
+	font-family: Roboto;
 	font-size: 0.9em;
 	line-height: 1.4;
 }
 .f-heading {
-	font-family: arial;
+	font-family: Roboto;
 	font-weight: 500;
 	line-height: 1.4;
 }
 .f-link {
-	font-family: arial;
+	font-family: Roboto;
 	line-height: 1.4;
 	text-decoration: underline;
 }
 .f-text {
-	font-family: arial;
+	font-family: Roboto;
 	line-height: 1.4;
+}
+
+.font-family-code {
+	font-family: code;
+}
+.font-family-display {
+	font-family: display;
+}
+.font-family-text {
+	font-family: text;
 }
 
 .c-contrast {
