@@ -51,6 +51,7 @@ local sides = {
 		silver: '#DDDDDD',
 		gray: '#AAAAAA',
 		black: '#111111',
+
 		theme: {
 			default: self.light,
 			light: {
@@ -59,7 +60,7 @@ local sides = {
 				heading: $.color.black,
 				link: $.color.green,
 				code: $.color.black,
-				border: $.color.lime
+				border: $.color.black
 			},
 			contrast: self.light + {
 				background: $.color.silver,
@@ -93,6 +94,9 @@ local sides = {
 			text: {
 				'font family': $.font.family.text,
 				'line height': '1.4'
+			},
+			display: self.text + {
+				'font family': $.font.family.display,
 			},
 			heading: self.text + {
 				'font weight': '500'

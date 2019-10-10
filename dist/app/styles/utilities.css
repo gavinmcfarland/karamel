@@ -845,6 +845,10 @@
 	font-size: 0.9em;
 	line-height: 1.4;
 }
+.f-display {
+	font-family: Miriam Libre;
+	line-height: 1.4;
+}
 .f-heading {
 	font-family: Roboto;
 	font-weight: 500;
