@@ -120,5 +120,8 @@ function buildPostCSS(input, output) {
   });
 }
 
+buildPostCSS('./src/styles/utilities.css', './dist/karamel/utilities.css');
+buildPostCSS('./src/styles/normalize.css', './dist/karamel/normalize.css');
 buildPostCSS('./src/styles/main.css', './dist/karamel/index.css');
-buildPostCSS('./src/styles/utilities.css', './dist/karamel/utilities.css'); // console.log(mole.debug)
+buildPostCSS('./src/styles/utilities.css', './utilities.css');
+buildPostCSS('./src/styles/normalize.css', './normalize.css'); // console.log(mole.debug)

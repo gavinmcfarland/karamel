@@ -18,3 +18,4 @@
 - Separate files into `karamel` (index.css), `karamel/typography`, `karamel/reset`, `karamel/functions`.
 - Test custom config from another package (app might have to be moved into a postcss plugin)
 - Consider moving logic for creating parts into PostCSS styles (using mole to output json or js object which is imported by PostCSS)
+- Fix bug when styles are build and utilities file is empty. Think it has something to do with mole.build() not being done before postCSS starts parsing
