@@ -876,21 +876,21 @@
 
 .c-contrast {
 	--background-color: #DDDDDD;
-	--border-color: #01FF70;
+	--border-color: #111111;
 	--heading-color: #111111;
 	--link-color: #2ECC40;
 	--color: #111111;
 }
 .c {
 	--background-color: #FFFFFF;
-	--border-color: #01FF70;
+	--border-color: #111111;
 	--heading-color: #111111;
 	--link-color: #2ECC40;
 	--color: #111111;
 }
 .c-light {
 	--background-color: #FFFFFF;
-	--border-color: #01FF70;
+	--border-color: #111111;
 	--heading-color: #111111;
 	--link-color: #2ECC40;
 	--color: #111111;

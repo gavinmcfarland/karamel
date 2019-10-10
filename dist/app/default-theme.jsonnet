@@ -58,7 +58,7 @@ local sides = {
 				text: $.color.black,
 				background: $.color.white,
 				heading: $.color.black,
-				link: $.color.green,
+				link: $.color.black,
 				code: $.color.black,
 				border: $.color.black
 			},
