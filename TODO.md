@@ -15,4 +15,6 @@
   - `font size` DONE
 - Create or use a plugin to apply parts to css
 - Move parts/property definitions to separate file from theme
-- Think about how `Karamel` should be organised, reset file? typography file?, components file?, parts file?
+- Separate files into `karamel` (index.css), `karamel/typography`, `karamel/reset`, `karamel/functions`.
+- Test custom config from another package (app might have to be moved into a postcss plugin)
+- Consider moving logic for creating parts into PostCSS styles (using mole to output json or js object which is imported by PostCSS)

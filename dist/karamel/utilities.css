@@ -41,7 +41,6 @@
 .h-3 {
 	height: 1200px
 }
-
 .m-1 {
 	margin: 0.125em
 }
@@ -393,7 +392,6 @@
 .max-w-3 {
 	max-width: 1200px
 }
-
 .p-1 {
 	padding: 0.125em
 }
@@ -769,7 +767,6 @@
 .f-10 {
 	font-size: 52px
 }
-
 .f-aqua {
 	color: #7FDBFF;
 }
@@ -824,7 +821,6 @@
 .f-primary {
 	color: green;
 }
-
 .flex-open {
 	display: flex;
 	flex-wrap: wrap;
@@ -859,7 +855,6 @@
 	font-family: Roboto;
 	line-height: 1.4;
 }
-
 .font-family-code {
 	font-family: Roboto;
 }
@@ -869,7 +864,6 @@
 .font-family-text {
 	font-family: Roboto;
 }
-
 .c-contrast {
 	--background-color: #DDDDDD;
 	--border-color: #01FF70;
@@ -913,7 +907,6 @@
 .z-50 {
 	z-index: 50
 }
-
 .aqua {
 	color: #7FDBFF;
 }

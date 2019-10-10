@@ -7,7 +7,7 @@
 		"mole/karamel": "bin/karamel",
 		"karamel": "bin/karamel"
 	},
-	"style": "dist/karamel.css",
+	"style": "dist/karamel/index.css",
 	"scripts": {
 		"build": "babel src -d dist/app --copy-files && node dist/app/index.js"
 	},

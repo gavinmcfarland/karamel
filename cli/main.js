@@ -25,7 +25,7 @@ async function copyTemplateFiles(options) {
 // }
 
 export async function buildKaramelStylesheet() {
-	buildPostCSS('./src/styles/main.css', './dist/karamel.css')
+	buildPostCSS('./src/styles/main.css', './dist/karamel/index.css')
 	console.log('%s Karamel stylsheet created', chalk.green.bold('DONE'))
 	return true
 }

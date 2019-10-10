@@ -120,4 +120,5 @@ function buildPostCSS(input, output) {
   });
 }
 
-buildPostCSS('./src/styles/main.css', './dist/karamel.css'); // console.log(mole.debug)
+buildPostCSS('./src/styles/main.css', './dist/karamel/index.css');
+buildPostCSS('./src/styles/utilities.css', './dist/karamel/utilities.css'); // console.log(mole.debug)

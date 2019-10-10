@@ -61,6 +61,8 @@ export function buildPostCSS(input, output) {
 	})
 }
 
-buildPostCSS('./src/styles/main.css', './dist/karamel.css')
+buildPostCSS('./src/styles/utilities.css', './dist/karamel/utilities.css')
+buildPostCSS('./src/styles/normalize.css', './dist/karamel/normalize.css')
+buildPostCSS('./src/styles/main.css', './dist/karamel/index.css')
 
 // console.log(mole.debug)
