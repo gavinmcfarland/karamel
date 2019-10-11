@@ -1519,14 +1519,14 @@ body * {
 	font-family: Roboto;
 	font-weight: 600;
 	letter-spacing: 0.23em;
-	line-height: 1.4;
+	line-height: 1.5;
 	text-transform: uppercase;
 }
 
 .f-code {
 	font-family: Roboto;
 	font-size: 0.9em;
-	line-height: 1.4;
+	line-height: 1.5;
 }
 
 .f-display {
@@ -1537,18 +1537,18 @@ body * {
 .f-heading {
 	font-family: Roboto;
 	font-weight: 500;
-	line-height: 1.4;
+	line-height: 1.5;
 }
 
 .f-link {
 	font-family: Roboto;
-	line-height: 1.4;
+	line-height: 1.5;
 	text-decoration: underline;
 }
 
 .f-text {
 	font-family: Roboto;
-	line-height: 1.4;
+	line-height: 1.5;
 }
 
 .font-family-code {
@@ -1714,7 +1714,7 @@ body {
 
 body {
 	font-family: Roboto;
-	line-height: 1.4;
+	line-height: 1.5;
 }
 
 body {
@@ -1758,7 +1758,7 @@ h1,h2,h3,h4,h5,h6 {
 h1,h2,h3,h4,h5,h6 {
 	font-family: Roboto;
 	font-weight: 500;
-	line-height: 1.4;
+	line-height: 1.5;
 }
 
 h1 {
@@ -1840,7 +1840,7 @@ caps {
 	font-family: Roboto;
 	font-weight: 600;
 	letter-spacing: 0.23em;
-	line-height: 1.4;
+	line-height: 1.5;
 	text-transform: uppercase;
 }
 
@@ -1851,7 +1851,7 @@ q {
 code {
 	font-family: Roboto;
 	font-size: 0.9em;
-	line-height: 1.4;
+	line-height: 1.5;
 }
 
 code {

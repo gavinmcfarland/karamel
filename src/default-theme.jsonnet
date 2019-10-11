@@ -92,7 +92,7 @@ local sides = {
 		style: {
 			text: {
 				'font family': $.font.family.text,
-				'line height': '1.4'
+				'line height': '1.5'
 			},
 			display: self.text + {
 				'font family': $.font.family.display,
