@@ -17,6 +17,8 @@ var _postcssCustomSelectors = _interopRequireDefault(require("postcss-custom-sel
 
 var _postcssExtendRule = _interopRequireDefault(require("postcss-extend-rule"));
 
+var _postcssSelectorMatches = _interopRequireDefault(require("postcss-selector-matches"));
+
 var _autoprefixer = _interopRequireDefault(require("autoprefixer"));
 
 var _precss = _interopRequireDefault(require("precss"));
@@ -103,7 +105,7 @@ _mole["default"].build(); // Need an option to avoid build and just output strin
 
 function buildPostCSS(input, output) {
   _fs["default"].readFile(input, function (err, css) {
-    (0, _postcss["default"])([_postcssImport["default"], _postcssCustomSelectors["default"], _postcssExtendRule["default"]]).process(css, {
+    (0, _postcss["default"])([_postcssImport["default"], _postcssCustomSelectors["default"], _postcssExtendRule["default"], _postcssSelectorMatches["default"]]).process(css, {
       from: input,
       to: output
     }).then(function (result) {

@@ -4,6 +4,7 @@ import postcss from 'postcss'
 import atImport from 'postcss-import'
 import customSelectors from 'postcss-custom-selectors'
 import extend from 'postcss-extend-rule'
+import matches from 'postcss-selector-matches'
 import autoprefixer from 'autoprefixer'
 import precss from 'precss'
 
@@ -50,7 +51,7 @@ mole.build()
 
 export function buildPostCSS(input, output) {
 	fs.readFile(input, (err, css) => {
-		postcss([atImport, customSelectors, extend])
+		postcss([atImport, customSelectors, extend, matches])
 			.process(css, { from: input, to: output })
 			.then(result => {
 				fs.writeFile(output, result.css, () => true)

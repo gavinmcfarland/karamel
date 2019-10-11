@@ -5,7 +5,6 @@ local sides = {
 	left: { abbr: 'l' }
 };
 
-
 {
 	asset: {
 		font: [
@@ -97,6 +96,7 @@ local sides = {
 			},
 			display: self.text + {
 				'font family': $.font.family.display,
+				'line height': $.number['octave'],
 			},
 			heading: self.text + {
 				'font weight': '500'

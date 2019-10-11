@@ -9,7 +9,7 @@ body {
 }
 
 :--heading,
-:--text-block,
+:--text,
 :--code-block {}
 
 :--heading {
@@ -46,7 +46,7 @@ h6 {
 	color: var(--heading-color);
 }
 
-:--text-block {
+:--text {
 	@extend .mt-6, .mb-6;
 }
 
@@ -72,13 +72,18 @@ pre {
 	background-color: inherit;
 }
 
-a {
+:--link {
 	cursor: pointer;
-	color: var(--link-color)
+	color: var(--link-color);
+
+	&:hover {
+		cursor: pointer;
+		color: var(--link-color)
+	}
 }
 
-a:hover {
-	background-color: var(--color);
+:--text :--link {
+	text-decoration: underline;
 }
 
 :--code-inline {
@@ -91,8 +96,9 @@ a:hover {
 :--code-block {
 	display: block;
 	/* Move to framework? */
-	background-color: var(--background-color);
-	@extend .c-contrast, .p-8;
+	border: 1px solid black;
+	border-radius: 2px;
+	@extend .c-contrast, .p-8, .f-display;
 }
 
 table {

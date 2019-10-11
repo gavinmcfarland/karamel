@@ -1531,7 +1531,7 @@ body * {
 
 .f-display {
 	font-family: Miriam Libre;
-	line-height: 1.4;
+	line-height: 2;
 }
 
 .f-heading {
@@ -1735,6 +1735,12 @@ p,
 ul,
 ol,
 blockquote,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
 :not(p)
 :not(li)
 :not(td)
@@ -1819,11 +1825,11 @@ h6 {
 	color: var(--heading-color);
 }
 
-p,ul,ol,blockquote {
+p,ul,ol,blockquote,h1,h2,h3,h4,h5,h6 {
 	margin-bottom: 1em;
 }
 
-p,ul,ol,blockquote {
+p,ul,ol,blockquote,h1,h2,h3,h4,h5,h6 {
 	margin-top: 1em;
 }
 
@@ -1858,11 +1864,16 @@ pre {
 
 a {
 	cursor: pointer;
-	color: var(--link-color)
+	color: var(--link-color);
+
+	&:hover {
+		cursor: pointer;
+		color: var(--link-color)
+	}
 }
 
-a:hover {
-	background-color: var(--color);
+p a,ul a,ol a,blockquote a,h1 a,h2 a,h3 a,h4 a,h5 a,h6 a {
+	text-decoration: underline;
 }
 
 p>code,li>code,td>code {
@@ -1889,11 +1900,17 @@ p>code,li>code,td>code {
 :not(p):not(li):not(td)>code {
 	display: block;
 	/* Move to framework? */
-	background-color: var(--background-color);
+	border: 1px solid black;
+	border-radius: 2px;
 }
 
 :not(p):not(li):not(td)>code {
 	padding: 1.4375em;
+}
+
+:not(p):not(li):not(td)>code {
+	font-family: Miriam Libre;
+	line-height: 2;
 }
 
 :not(p):not(li):not(td)>code {
