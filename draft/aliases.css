@@ -1,0 +1,7 @@
+@alias text p, :list, :heading;
+@alias heading h1, h2, h3, h4, h5, h6;
+@alias link a;
+@alias list ul, ol;
+@alias code code;
+@alias block :not(p):not(li):not(td);
+@alias inline p, li, td;

@@ -1,0 +1,4 @@
+for side, value in sides {
+	padding(-<side>)?: value,
+	margin(-<side>)?:  - value
+}

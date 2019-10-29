@@ -1,0 +1,122 @@
+breakpoint: [
+	"600px",
+	"900px",
+	"1200px",
+	"1800px"
+]
+
+side: [
+	/top/,
+	/right|start/,
+	/bottom/,
+	/left|end/
+]
+
+number: {
+	--base: {
+		@for i in breakpoint {
+			@media (width: breakpoint[i]) {
+				i * 16px
+			}
+		}
+	},
+	golden-ratio: 1.168,
+	octave: 2
+}
+
+color: {
+	silver: "",
+	green: "",
+	blue: "",
+	red: "",
+	black: ""
+}
+
+size: [
+	@for i in 1...10 {
+		number|--base| * number.octave * i
+	}
+]
+
+border: {
+	color: red,
+	width: small,
+	style: solid
+}
+
+margin: [
+	@for i in 1...20 {
+		size[i]
+	}
+]
+
+padding: {
+	<side>: {
+		$0
+
+		if $0 < 0 {
+			& margin: $0;
+		}
+	}
+}
+
+width: [
+
+]
+
+number: {
+	--base: {
+		@for i in breakpoint {
+			@media (width: breakpoint[i]) {
+				i * 16px
+			}
+		}
+	},
+	golden-ratio: 1.168,
+	octave: 2
+}
+
+font: {
+  	family: {
+		text: "Roboto",
+		display: "Miriam Libre"
+	},
+	size: [
+		@for i in 1..10 {
+			calc(number|--base| * number|golden ratio| * i)
+		}
+	]
+}
+
+font: {
+	style: {
+		text: {
+			font-family: text,
+			line-height: '1.5'
+		}
+		display: {
+			...self.text,
+			font-family: display,
+			line-height: number.octave
+		}
+		heading: {
+			...self.text,
+			font-weight: '500'
+		}
+		link: {
+			...self.text,
+			text-decoration: 'underline'
+		}
+		caps: {
+			...self.heading,
+			letter-spacing: '0.23em',
+			text-transform: 'uppercase',
+			font-weight: '600'
+		}
+		code: {
+			...self.text,
+			font-size: '0.9em',
+			font-family: code
+		}
+	}
+}
