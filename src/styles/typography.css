@@ -5,7 +5,7 @@ html {
 }
 
 body {
-	@extend .f-2, .c, .f-text;
+	@extend .f-3, .c, .f-text;
 }
 
 :--heading,
