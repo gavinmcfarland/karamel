@@ -13,7 +13,7 @@ import fontSize from './vars/font-size/index.js';
 
 
 // import parts from './models/parts';
-mole.config('./mole.config.js')
+mole.config('src/mole.config.js')
 
 console.log(mole)
 // mole.theme('karamel.theme.jsonnet')

@@ -10,7 +10,7 @@
 	},
 	"style": "dist/karamel/index.css",
 	"scripts": {
-		"build": "node ./src/index.js"
+		"build": "esbuild src/index.js --outfile=dist/bundle.js"
 	},
 	"unpkg": "dist/karamel.css",
 	"repository": {
